@@ -22,6 +22,8 @@ STATUS_ON_OFF = (
     (0,_('ON')),
 )
 
+def get_unit_list():
+    return((1,"元"), (2, "万元"))
 
 def get_value_list(group):
     """
