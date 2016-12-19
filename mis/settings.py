@@ -24,7 +24,7 @@ SECRET_KEY = '_5%1a5zxdjsb-je@85!l34g--ve7!skhc%^c2n)3vqyhq)yq@c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '*']
 
 
 # Application definition
@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'mis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'localhost',
+        'HOST': '222.73.31.125',
         'NAME': 'mis',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'USER': 'django_erp',
+        'PASSWORD': 'erp123456',
     }
 }
 
