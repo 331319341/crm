@@ -111,13 +111,13 @@ class ProjectAdmin(generic.BOAdmin):
     search_fields = ['code','name']# 指定要搜索的字段，将会出现一个搜索框让管理员搜索关键词
     readonly_fields = ['status']#只读字段
     raw_id_fields = ['partner']#在admin后台类中加入raw_id_fields（只适用于外键）后，会显示外键的详细信息
-    filter_horizontal = ['users']
+    filter_horizontal = ['users']#过滤内置条件
     form = ProjectForm
 
 
 class WarehouseAdmin(admin.ModelAdmin):
     list_display = ['code','name','location']# 指定要显示的字段
-    filter_horizontal = ['users']
+    filter_horizontal = ['users']#过滤内置条件
 
     def save_model(self, request, obj, form, change):
         super(WarehouseAdmin,self).save_model(request,obj,form,change)
@@ -190,7 +190,7 @@ class MaterialAdmin(generic.BOAdmin):
         ('brand',),('category',),('status','is_equip','can_sale','is_virtual',),
         ('warehouse',),('tp',),('measure',),('stock_price','purchase_price','sale_price',),
     )# 自定义编辑表单，在编辑表单的时候 显示哪些字段，显示的属性
-    filter_horizontal = ['measure']
+    filter_horizontal = ['measure']#过滤内置条件
     inlines = [ExtraParamInline]#内联
     form = MaterialForm
 
