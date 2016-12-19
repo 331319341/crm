@@ -14,7 +14,7 @@ class CustomerAdmin(admin.ModelAdmin):
     inlines = [XiaoshouInline]
     def save_model(self, request, obj, form, change):
         if request.user.is_superuser:
-            super(TeamAdmin,self).save_model(request,obj,form,change)
+            super(CustomerAdmin,self).save_model(request,obj,form,change)
             
     #def get_queryset(self, request):
     #    qs = super(MyModelAdmin, self).get_queryset(request)

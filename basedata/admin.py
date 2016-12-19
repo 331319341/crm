@@ -43,7 +43,7 @@ class AddressAdmin(generic.BOAdmin):
     exclude = ['content_type','object_id','creator','modifier','creation','modification','begin','end']#排除
 
 
-class AddressInline(GenericTabularInline):
+class AddressInline(GenericTabularInline):  #通用表格内联
     model = Address
     exclude = ['content_type','object_id','creator','modifier','creation','modification','begin','end']#排除
     extra = 1
