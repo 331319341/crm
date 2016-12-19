@@ -324,17 +324,17 @@ class DocumentAdmin(generic.BOAdmin):
     publish.short_description = _('publish selected %(verbose_name_plural)s')
 
 # admin.site.register(Address,AddressAdmin)
-admin.site.register(ValueList,ValueListAdmin)
-admin.site.register(Partner,PartnerAdmin)
-admin.site.register(Project,ProjectAdmin)
-admin.site.register(Material,MaterialAdmin)
-admin.site.register(Warehouse,WarehouseAdmin)
-admin.site.register(Brand,BrandAdmin)
-admin.site.register(Measure,MeasureAdmin)
-admin.site.register(Category,CategoryAdmin)
-admin.site.register(TechnicalParameterName,TechParamNameAdmin)
-admin.site.register(Trade,TradeAdmin)
-admin.site.register(ExpenseAccount,ExpenseAdmin)
-admin.site.register(Employee,EmployeeAdmin)
-admin.site.register(DataImport,DataImportAdmin)
-admin.site.register(Document,DocumentAdmin)
+admin.site.register(ValueList,ValueListAdmin) #值列表
+admin.site.register(Partner,PartnerAdmin)    #合作伙伴
+admin.site.register(Project,ProjectAdmin)    #项目
+admin.site.register(Material,MaterialAdmin)  #物料
+admin.site.register(Warehouse,WarehouseAdmin) #仓库
+admin.site.register(Brand,BrandAdmin)        #品牌
+admin.site.register(Measure,MeasureAdmin)    #计量单位
+admin.site.register(Category,CategoryAdmin)  #分类
+admin.site.register(TechnicalParameterName,TechParamNameAdmin) #技术参数
+admin.site.register(Trade,TradeAdmin)        #经济行业
+admin.site.register(ExpenseAccount,ExpenseAdmin) #费用科目
+admin.site.register(Employee,EmployeeAdmin)    #职员
+admin.site.register(DataImport,DataImportAdmin) #导入
+admin.site.register(Document,DocumentAdmin)     #文档
