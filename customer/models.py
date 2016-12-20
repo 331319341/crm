@@ -5,8 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 from common import const
 from common import generic
 
-#from . import Gender
-
 # Create your models here.
 class Project(generic.BO):
     title = models.CharField(verbose_name=_("project name"), max_length=32)
@@ -74,6 +72,3 @@ class Contract(models.Model):
     class Meta:
         verbose_name = _("sale contract")
         verbose_name_plural = _("sale contracts")
-
-
-

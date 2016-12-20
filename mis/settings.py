@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'purchase',
     'sale',
     'customer',
+    'team'
 )
 
 MIDDLEWARE_CLASSES = (
