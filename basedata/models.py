@@ -104,11 +104,11 @@ class Partner(generic.BO):
     """
     合作伙伴
     """
-    index_weight = 3
+    index_weight = 3 #权重
     PARTNER_TYPE = (
         ('C', _('Customer')),
         ('S', _('Supplier')),
-    )
+    ) #合作伙伴类型
 
     LEVEL = (
         ('A','A'),
