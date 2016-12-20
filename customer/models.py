@@ -18,25 +18,20 @@ class Project(generic.BO):
         verbose_name_plural = _("sale projects")
 
 class Customer(generic.BO):
-    project = models.ForeignKey(Project)
-    name = models.CharField(max_length=32)
-    birth = models.DateField()
-    gender = models.CharField(max_length=8, choices=const.gender_set, default='1')
-    addr = models.CharField(max_length=32)
-    phone = models.IntegerField()
-    Email = models.CharField(max_length=32)
-    QQ = models.IntegerField()
-    xiaoshourenyuan = models.ForeignKey(User)
-    beizhu = models.CharField(max_length=256)
+    project = models.ForeignKey(Project, verbose_name=_("project name"))
+    name = models.CharField(verbose_name=_("customer name"), max_length=32)
+    birth = models.DateField(verbose_name=_("customer birth"))
+    gender = models.CharField(verbose_name=_("customer gender"), max_length=8, choices=const.gender_set, default='1')
+    addr = models.CharField(verbose_name=_("customer addr"), max_length=32)
+    phone = models.IntegerField(verbose_name=_("phone"))
+    Email = models.CharField(verbose_name=_("Email"), max_length=32)
+    QQ = models.IntegerField(verbose_name=_("QQ"))
+    seller = models.ForeignKey(User, verbose_name=_("seller"))
+    beizhu = models.CharField(verbose_name=_("beizhu"), max_length=256)
     
-class xiaoshou(models.Model):
-    customer = models.ForeignKey(Customer)
-    amount = models.IntegerField()
-    unit = models.CharField(max_length=8, choices=const.unit_set, default='1')
-    xiaoshou = models.ForeignKey(User)
-    start_time = models.DateField(default=datetime.datetime.now)
-    end_time = models.DateField()
-    beizhu = models.CharField(max_length=256)
+    class Meta:
+        verbose_name = _("sale customer")
+        verbose_name_plural = _("sale customers")
 
 class Order(models.Model):
     project_name = models.ForeignKey(Project, verbose_name=_("project name"))

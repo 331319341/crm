@@ -3,17 +3,13 @@ from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from common import generic
 from common import const
-from .models import Project, Customer, xiaoshou, Order, Contract
+from .models import Project, Customer, Order, Contract
 from common import generic
 
 # Register your models here.
 
-class XiaoshouInline(admin.TabularInline):
-    model = xiaoshou
-    
 class CustomerAdmin(generic.BOAdmin):
     #list_display = ['name','leader']
-    inlines = [XiaoshouInline]
     #fieldsets = [
      #   (None,{'fields':[(('projrcct',),('name','birth',),('gender','addr',),('phone',),('Email',),('QQ',),('xiaoshourenyuan',),('beizhu',))]}),
     #    (u'xsmx',{'fields':[(('amount', 'unit',),('xiaoshou', 'start_time',),('end_time', 'beizhu',))]})

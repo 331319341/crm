@@ -1535,5 +1535,24 @@ msgstr "销售项目"
 msgid "project desc"
 msgstr "项目描述"
 
+msgid "sale customer"
+msgstr "客户管理"
 
+msgid "sale customers"
+msgstr "客户管理"
+
+msgid "customer birth"
+msgstr "生日"
+
+msgid "customer gender"
+msgstr "性别"
+
+msgid "customer addr"
+msgstr "住址"
+
+#msgid "phone"
+#msgstr "手机号"
+
+msgid "beizhu"
+msgstr "备注"
 

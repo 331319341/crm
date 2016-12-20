@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
-import datetime
 from django.conf import settings
+import datetime
 
 
 class Migration(migrations.Migration):
@@ -46,17 +46,18 @@ class Migration(migrations.Migration):
                 ('modifier', models.CharField(max_length=20, null=True, verbose_name='modifier', blank=True)),
                 ('creation', models.DateTimeField(auto_now_add=True, verbose_name='creation', null=True)),
                 ('modification', models.DateTimeField(auto_now=True, verbose_name='modification', null=True)),
-                ('name', models.CharField(max_length=32)),
-                ('birth', models.DateField()),
-                ('gender', models.CharField(default=b'1', max_length=8, choices=[(1, '\u7537'), (2, '\u5973')])),
-                ('addr', models.CharField(max_length=32)),
-                ('phone', models.IntegerField()),
-                ('Email', models.CharField(max_length=32)),
-                ('QQ', models.IntegerField()),
-                ('beizhu', models.CharField(max_length=256)),
+                ('name', models.CharField(max_length=32, verbose_name='customer name')),
+                ('birth', models.DateField(verbose_name='customer birth')),
+                ('gender', models.CharField(default=b'1', max_length=8, verbose_name='customer gender', choices=[(1, '\u7537'), (2, '\u5973')])),
+                ('addr', models.CharField(max_length=32, verbose_name='customer addr')),
+                ('phone', models.IntegerField(verbose_name='phone')),
+                ('Email', models.CharField(max_length=32, verbose_name='Email')),
+                ('QQ', models.IntegerField(verbose_name='QQ')),
+                ('beizhu', models.CharField(max_length=256, verbose_name='beizhu')),
             ],
             options={
-                'abstract': False,
+                'verbose_name': 'sale customer',
+                'verbose_name_plural': 'sale customers',
             },
         ),
         migrations.CreateModel(
@@ -94,26 +95,14 @@ class Migration(migrations.Migration):
                 ('modifier', models.CharField(max_length=20, null=True, verbose_name='modifier', blank=True)),
                 ('creation', models.DateTimeField(auto_now_add=True, verbose_name='creation', null=True)),
                 ('modification', models.DateTimeField(auto_now=True, verbose_name='modification', null=True)),
-                ('title', models.CharField(max_length=32)),
-                ('start_time', models.DateField(default=datetime.datetime.now)),
-                ('description', models.CharField(max_length=256, null=True)),
+                ('title', models.CharField(max_length=32, verbose_name='project name')),
+                ('start_time', models.DateField(default=datetime.datetime.now, verbose_name='start time')),
+                ('description', models.CharField(max_length=256, null=True, verbose_name='project desc')),
             ],
             options={
-                'abstract': False,
+                'verbose_name': 'sale project',
+                'verbose_name_plural': 'sale projects',
             },
-        ),
-        migrations.CreateModel(
-            name='xiaoshou',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('amount', models.IntegerField()),
-                ('unit', models.CharField(default=b'1', max_length=8, choices=[(1, '\u5143'), (2, '\u4e07\u5143')])),
-                ('start_time', models.DateField(default=datetime.datetime.now)),
-                ('end_time', models.DateField()),
-                ('beizhu', models.CharField(max_length=256)),
-                ('customer', models.ForeignKey(to='customer.Customer')),
-                ('xiaoshou', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
-            ],
         ),
         migrations.AddField(
             model_name='order',
@@ -128,11 +117,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='customer',
             name='project',
-            field=models.ForeignKey(to='customer.Project'),
+            field=models.ForeignKey(verbose_name='project name', to='customer.Project'),
         ),
         migrations.AddField(
             model_name='customer',
-            name='xiaoshourenyuan',
-            field=models.ForeignKey(to=settings.AUTH_USER_MODEL),
+            name='seller',
+            field=models.ForeignKey(verbose_name='seller', to=settings.AUTH_USER_MODEL),
         ),
     ]
