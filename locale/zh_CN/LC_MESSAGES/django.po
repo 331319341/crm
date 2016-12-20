@@ -1448,3 +1448,92 @@ msgstr "已成功出库"
 
 msgid "check in successfully"
 msgstr "已成功入库"
+
+
+#: .\customer\models.py
+msgid "customer resource"
+msgstr "客户资源"
+
+msgid "sale orders"
+msgstr "销售订单"
+
+#msgid "project name"
+#msgstr "项目名称"
+
+msgid "sale leader"
+msgstr "销售经理"
+
+msgid "team leader"
+msgstr "团队经理"
+
+msgid "seller"
+msgstr "销售专员"
+
+msgid "customer name"
+msgstr "客户名字"
+
+#msgid "start time"
+#msgstr "起始时间"
+
+msgid "buy sum"
+msgstr "销售金额"
+
+msgid "buy deadline"
+msgstr "认购期限(月)"
+
+msgid "year rate"
+msgstr "年利率"
+
+msgid "commission sale leader"
+msgstr "提成-销售经理名字"
+
+msgid "commission team leader"
+msgstr "提成-团队经理名字"
+
+msgid "commission sale leader rate"
+msgstr "提成-销售经理比例"
+
+msgid "commission team leader rate"
+msgstr "提成-团队经理比例"
+
+msgid "commission sale leader sum"
+msgstr "销售经理-应付提成"
+
+msgid "commission team leader sum"
+msgstr "团队经理-应付提成"
+
+msgid "commission deadline"
+msgstr "提成-应付日期"
+
+msgid "manager"
+msgstr "负责人"
+
+msgid "sale contracts"
+msgstr "销售合同"
+
+msgid "number"
+msgstr "合同编号"
+
+msgid "into way"
+msgstr "入账途径"
+
+msgid "customer ID"
+msgstr "客户身份证号"
+
+msgid "buy date"
+msgstr "购买时间"
+
+msgid "buy category"
+msgstr "购买类别"
+
+msgid "sale projects"
+msgstr "销售项目"
+
+msgid "sale project"
+msgstr "销售项目"
+
+msgid "project desc"
+msgstr "项目描述"
+
+
+

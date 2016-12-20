@@ -22,8 +22,8 @@ STATUS_ON_OFF = (
     (0,_('ON')),
 )
 
-def get_unit_list():
-    return((1,"元"), (2, "万元"))
+gender_set = ((1, u'男'),(2, u'女'))
+unit_set = ((1, u"元"), (2, u"万元"))
 
 def get_value_list(group):
     """

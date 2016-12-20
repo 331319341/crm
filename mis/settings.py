@@ -58,6 +58,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'midware.cuser.RequestUser',
+    'django.middleware.locale.LocaleMiddleware'
 )
 
 ROOT_URLCONF = 'mis.urls'
@@ -105,7 +106,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'zh-CN'
+LANGUAGE_CODE = 'zh_CN'
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
@@ -115,7 +116,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = False
+#USE_TZ = False
+USER_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
