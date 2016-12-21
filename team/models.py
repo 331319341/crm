@@ -14,11 +14,11 @@ class Team(generic.BO):
         verbose_name = _("sale team")
         verbose_name_plural = _("sale teams")
         
-class Employee(models.Model):
+class Employee(generic.BO):
     name = models.CharField(verbose_name=_("name"), max_length=32, unique=True)
     passwd = models.CharField(verbose_name=_("passwd"), max_length=32)
     team = models.ForeignKey(Team, verbose_name=_("project team"))
-    create_time = models.DateField(verbose_name=_("create time"))
+    enter_date = models.DateField(verbose_name=_("enter date"))
     
     class Meta:
         verbose_name = _("sale employee")

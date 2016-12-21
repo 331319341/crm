@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from team.models import Employee
 import datetime
 from django.utils.translation import ugettext_lazy as _
 from common import const
@@ -24,7 +25,7 @@ class Customer(generic.BO):
     phone = models.IntegerField(verbose_name=_("phone"))
     Email = models.CharField(verbose_name=_("Email"), max_length=32)
     QQ = models.IntegerField(verbose_name=_("QQ"))
-    seller = models.ForeignKey(User, verbose_name=_("seller"))
+    seller = models.ForeignKey(Employee, verbose_name=_("seller"))
     beizhu = models.CharField(verbose_name=_("beizhu"), max_length=256)
     
     class Meta:
@@ -35,7 +36,7 @@ class Order(models.Model):
     project_name = models.ForeignKey(Project, verbose_name=_("project name"))
     sale_leader = models.CharField(verbose_name=_("sale leader"), max_length=32)
     team_leader = models.CharField(verbose_name=_("team leader"), max_length=32)
-    seller = models.ForeignKey(User, verbose_name=_("seller"))
+    seller = models.ForeignKey(Employee, verbose_name=_("seller"))
     customer_name = models.CharField(verbose_name=_("customer name"), max_length=32)
     start_time = models.DateField(verbose_name=_("start time"), default=datetime.datetime.now)
     buy_sum = models.IntegerField(verbose_name=_("buy sum"))
@@ -58,7 +59,7 @@ class Contract(models.Model):
     number = models.CharField(verbose_name=_("number"), max_length=32)
     into_way = models.CharField(verbose_name=_("into way"), max_length=32)
     project_name = models.CharField(verbose_name=_("project name"), max_length=32)
-    seller = models.ForeignKey(User, verbose_name=_("seller"))
+    seller = models.ForeignKey(Employee, verbose_name=_("seller"))
     customer_name = models.CharField(verbose_name=_("customer name"), max_length=32)
     customer_ID = models.CharField(verbose_name=_("customer ID"), max_length=32)
     bank_name = models.CharField(verbose_name=_("bank name"), max_length=32)

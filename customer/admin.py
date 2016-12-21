@@ -18,9 +18,8 @@ class CustomerAdmin(generic.BOAdmin):
             
     def get_queryset(self, request):
         qs = super(CustomerAdmin, self).get_queryset(request)
-        #if request.user.is_superuser:
-        #    return qs
-        return qs
+        if request.user.is_superuser:
+            return qs
         employee = Employee.objects.get(name=request.user)
         return qs.filter(seller=employee.id)
     

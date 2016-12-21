@@ -2,14 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
-from django.conf import settings
 import datetime
 
 
 class Migration(migrations.Migration):
 
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        ('team', '0001_initial'),
     ]
 
     operations = [
@@ -29,7 +28,7 @@ class Migration(migrations.Migration):
                 ('buy_category', models.CharField(max_length=32, verbose_name='buy category')),
                 ('buy_deadline', models.IntegerField(verbose_name='buy deadline')),
                 ('year_rate', models.FloatField(verbose_name='year rate')),
-                ('seller', models.ForeignKey(verbose_name='seller', to=settings.AUTH_USER_MODEL)),
+                ('seller', models.ForeignKey(verbose_name='seller', to='team.Employee')),
             ],
             options={
                 'verbose_name': 'sale contract',
@@ -48,7 +47,7 @@ class Migration(migrations.Migration):
                 ('modification', models.DateTimeField(auto_now=True, verbose_name='modification', null=True)),
                 ('name', models.CharField(max_length=32, verbose_name='customer name')),
                 ('birth', models.DateField(verbose_name='customer birth')),
-                ('gender', models.CharField(default=b'1', max_length=8, verbose_name='customer gender', choices=[(1, '\u7537'), (2, '\u5973')])),
+                ('gender', models.CharField(default=b'1', max_length=8, verbose_name='customer gender', choices=[(b'1', '\u7537'), (b'2', '\u5973')])),
                 ('addr', models.CharField(max_length=32, verbose_name='customer addr')),
                 ('phone', models.IntegerField(verbose_name='phone')),
                 ('Email', models.CharField(max_length=32, verbose_name='Email')),
@@ -112,7 +111,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='order',
             name='seller',
-            field=models.ForeignKey(verbose_name='seller', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(verbose_name='seller', to='team.Employee'),
         ),
         migrations.AddField(
             model_name='customer',
@@ -122,6 +121,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='customer',
             name='seller',
-            field=models.ForeignKey(verbose_name='seller', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(verbose_name='seller', to='team.Employee'),
         ),
     ]

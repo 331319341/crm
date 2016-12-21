@@ -8,7 +8,8 @@ from .models import Team, Employee
 from common import generic
 from common.logger import logger
 from common.permission_resource import add_team_permission, change_team_permission, delete_team_permission,\
-                                       add_order_permission, change_order_permission, delete_order_permission 
+                                       add_order_permission, change_order_permission, delete_order_permission, \
+                                       add_customer_permission, change_customer_permission, delete_customer_permission
 
 # Register your models here.
     
@@ -34,8 +35,8 @@ class TeamAdmin(generic.BOAdmin):
         super(TeamAdmin, self).save_model(request,obj,form,change)
     
 class EmployeeAdmin(generic.BOAdmin):
-    list_display = ['name', 'team', 'create_time']
-    fields = (('name',), ('passwd',), ('team',), ('create_time',))
+    list_display = ['name', 'team', 'enter_date']
+    fields = (('name',), ('passwd',), ('team',), ('enter_date',))
     
     def save_model(self, request, obj, form, change):
         if change:
@@ -54,9 +55,10 @@ class EmployeeAdmin(generic.BOAdmin):
                                              is_superuser=False
                                            )
             user.save
-            #user.user_permissions.add(add_team_permission)
-            user.user_permissions.add(add_team_permission, change_team_permission, delete_team_permission)
+            user.user_permissions.add(add_team_permission)
+            #user.user_permissions.add(add_team_permission, change_team_permission, delete_team_permission)
             #user.user_permissions.add(add_order_permission, change_order_permission, delete_order_permission)
+            user.user_permissions.add(add_customer_permission, change_customer_permission, delete_customer_permission)
         super(EmployeeAdmin, self).save_model(request,obj,form,change)
             
 admin.site.register(Team, TeamAdmin)

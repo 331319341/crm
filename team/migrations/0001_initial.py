@@ -14,9 +14,15 @@ class Migration(migrations.Migration):
             name='Employee',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=32, verbose_name='name')),
+                ('begin', models.DateField(null=True, verbose_name='begin date', blank=True)),
+                ('end', models.DateField(null=True, verbose_name='end date', blank=True)),
+                ('creator', models.CharField(max_length=20, null=True, verbose_name='creator', blank=True)),
+                ('modifier', models.CharField(max_length=20, null=True, verbose_name='modifier', blank=True)),
+                ('creation', models.DateTimeField(auto_now_add=True, verbose_name='creation', null=True)),
+                ('modification', models.DateTimeField(auto_now=True, verbose_name='modification', null=True)),
+                ('name', models.CharField(unique=True, max_length=32, verbose_name='name')),
                 ('passwd', models.CharField(max_length=32, verbose_name='passwd')),
-                ('create_time', models.DateField(verbose_name='create time')),
+                ('enter_date', models.DateField(verbose_name='enter date')),
             ],
             options={
                 'verbose_name': 'sale employee',
@@ -27,7 +33,13 @@ class Migration(migrations.Migration):
             name='Team',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=32, verbose_name='team name')),
+                ('begin', models.DateField(null=True, verbose_name='begin date', blank=True)),
+                ('end', models.DateField(null=True, verbose_name='end date', blank=True)),
+                ('creator', models.CharField(max_length=20, null=True, verbose_name='creator', blank=True)),
+                ('modifier', models.CharField(max_length=20, null=True, verbose_name='modifier', blank=True)),
+                ('creation', models.DateTimeField(auto_now_add=True, verbose_name='creation', null=True)),
+                ('modification', models.DateTimeField(auto_now=True, verbose_name='modification', null=True)),
+                ('name', models.CharField(unique=True, max_length=32, verbose_name='team name')),
                 ('create_time', models.DateField(verbose_name='create time')),
                 ('team_leader', models.CharField(max_length=32, verbose_name='team name')),
                 ('description', models.CharField(max_length=256, null=True, verbose_name='team desc')),
@@ -40,6 +52,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='employee',
             name='team',
-            field=models.ForeignKey(verbose_name='project name', to='team.Team'),
+            field=models.ForeignKey(verbose_name='project team', to='team.Team'),
         ),
     ]

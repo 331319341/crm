@@ -22,7 +22,7 @@ STATUS_ON_OFF = (
     (0,_('ON')),
 )
 
-gender_set = ((1, u'男'),(2, u'女'))
+gender_set = (('1', u'男'),('2', u'女'))
 unit_set = ((1, u"元"), (2, u"万元"))
 
 def get_value_list(group):
