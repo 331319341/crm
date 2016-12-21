@@ -4,6 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 from common import generic
 from common import const
 from .models import Project, Customer, Order, Contract
+from team.models import Employee
 from common import generic
 
 # Register your models here.
@@ -14,16 +15,14 @@ class CustomerAdmin(generic.BOAdmin):
      #   (None,{'fields':[(('projrcct',),('name','birth',),('gender','addr',),('phone',),('Email',),('QQ',),('xiaoshourenyuan',),('beizhu',))]}),
     #    (u'xsmx',{'fields':[(('amount', 'unit',),('xiaoshou', 'start_time',),('end_time', 'beizhu',))]})
     #]
-    def save_model(self, request, obj, form, change):
-        if request.user.is_superuser:
-            super(CustomerAdmin,self).save_model(request,obj,form,change)
             
-    #def get_queryset(self, request):
-    #    qs = super(MyModelAdmin, self).get_queryset(request)
-    #    #if request.user.is_superuser:
-    #    #    return qs
-    #    return qs
-    #    return qs.filter(reported_by_id=12)
+    def get_queryset(self, request):
+        qs = super(CustomerAdmin, self).get_queryset(request)
+        #if request.user.is_superuser:
+        #    return qs
+        return qs
+        employee = Employee.objects.get(name=request.user)
+        return qs.filter(seller=employee.id)
     
 class ProjectAdmin(generic.BOAdmin):
     list_display = ['title',]
