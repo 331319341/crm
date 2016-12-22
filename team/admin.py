@@ -12,11 +12,17 @@ from common.permission_resource import add_team_permission, change_team_permissi
                                        add_customer_permission, change_customer_permission, delete_customer_permission
 
 # Register your models here.
+
+class EmployeeInline(admin.StackedInline):
+    model = Employee
+    extra = 0
+    fields= ('name',)
+    readonly_fields = ['name',]
     
 class TeamAdmin(generic.BOAdmin):
     list_display = ['name', 'create_time', 'team_leader']
     fields = (('name'), ('create_time',), ('team_leader',), ('description',))
-    
+    inlines = [EmployeeInline,]
     #def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
     #    extra_context = extra_context or {}
     #    extra_context.update(dict(readonly=True))
@@ -25,14 +31,25 @@ class TeamAdmin(generic.BOAdmin):
     def save_model(self, request, obj, form, change):
         if change:
             old_team = Team.objects.get(id=obj.id)
-            old_group = Group.objects.get(name=old_team.name)
-            old_group.name = obj.name 
-            old_group.save()
+            if 'name' in form.changed_data:
+                old_group = Group.objects.get(name=old_team.name)
+                old_group.name = obj.name
+                old_group.save()
+            if 'team_leader' in form.changed_data:
+                e = Employee.objects.get(id=obj.team_leader)
+                e.team = old_team
+                e.save()
+            super(TeamAdmin, self).save_model(request,obj,form,change)
         else:
             team = Group()
             team.name = obj.name
             team.save()
-        super(TeamAdmin, self).save_model(request,obj,form,change)
+            super(TeamAdmin, self).save_model(request,obj,form,change)
+            if obj.team_leader:
+                e = Employee.objects.get(id=obj.team_leader)
+                e.team = obj
+                e.save()
+        #super(TeamAdmin, self).save_model(request,obj,form,change)
     
 class EmployeeAdmin(generic.BOAdmin):
     list_display = ['name', 'team', 'enter_date']

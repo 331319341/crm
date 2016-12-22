@@ -25,6 +25,15 @@ STATUS_ON_OFF = (
 gender_set = (('1', u'男'),('2', u'女'))
 unit_set = ((1, u"元"), (2, u"万元"))
 
+def get_employee():
+    try:
+        cursor = connection.cursor()
+        cursor.execute('SELECT id,name FROM team_employee;')
+        rows = cursor.fetchall()
+        return tuple([(id,name) for id,name in rows])
+    except Exception as e:
+        return None
+
 def get_value_list(group):
     """
     获取值列表信息

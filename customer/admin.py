@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 from common import generic
 from common import const
 from .models import Project, Customer, Order, Contract
-from team.models import Employee
+from team.models import Employee, Team
 from common import generic
 
 # Register your models here.
@@ -21,6 +21,12 @@ class CustomerAdmin(generic.BOAdmin):
         if request.user.is_superuser:
             return qs
         employee = Employee.objects.get(name=request.user)
+        teams = Team.objects.filter(team_leader = employee.id)
+        if teams:
+            teamid_list = [i.id for i in teams]
+            employees = Employee.objects.filter(team__in=teamid_list)
+            seller_list = [i.id for i in employees]
+            return qs.filter(seller__in=seller_list)
         return qs.filter(seller=employee.id)
     
 class ProjectAdmin(generic.BOAdmin):
