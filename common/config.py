@@ -9,5 +9,5 @@ class LogCon(object):
     'CRITICAL': logging.CRITICAL,
     'NOTSET': logging.NOTSET
     '''
-    level = 'DEBUG'
+    level = 'WARNING'
     file_name = 'mis.log'

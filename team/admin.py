@@ -49,11 +49,19 @@ class TeamAdmin(generic.BOAdmin):
                 e = Employee.objects.get(id=obj.team_leader)
                 e.team = obj
                 e.save()
-        #super(TeamAdmin, self).save_model(request,obj,form,change)
     
 class EmployeeAdmin(generic.BOAdmin):
     list_display = ['name', 'team', 'enter_date']
     fields = (('name',), ('passwd',), ('team',), ('enter_date',))
+    
+    def get_actions(self, request):
+        pass
+    
+    def delete_model(self, request, obj):
+        print 'delete'
+        print obj.id
+        super(EmployeeAdmin, self).delete_model(request,obj)
+        User.objects.filter(username=obj.name).delete()
     
     def save_model(self, request, obj, form, change):
         if change:
@@ -77,6 +85,6 @@ class EmployeeAdmin(generic.BOAdmin):
             #user.user_permissions.add(add_order_permission, change_order_permission, delete_order_permission)
             user.user_permissions.add(add_customer_permission, change_customer_permission, delete_customer_permission)
         super(EmployeeAdmin, self).save_model(request,obj,form,change)
-            
+    
 admin.site.register(Team, TeamAdmin)
 admin.site.register(Employee, EmployeeAdmin)
