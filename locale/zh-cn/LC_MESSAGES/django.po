@@ -1,0 +1,2408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-23 12:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: basedata/admin.py:64 basedata/models.py:128 organ/models.py:21
+msgid "tax address"
+msgstr ""
+
+#: basedata/admin.py:65 basedata/models.py:133 basedata/models.py:150
+#: basedata/models.py:246 hr/models.py:75 purchase/models.py:207
+#: sale/models.py:37 sale/models.py:117 sale/models.py:153
+#: selfhelp/models.py:257 workflow/models.py:150
+msgid "memo"
+msgstr ""
+
+#: basedata/admin.py:162 basedata/models.py:335
+msgid "material name"
+msgstr ""
+
+#: basedata/admin.py:163 basedata/models.py:336
+msgid "specifications"
+msgstr ""
+
+#: basedata/admin.py:220 basedata/models.py:208 basedata/models.py:228
+#: basedata/models.py:245 basedata/models.py:264 basedata/models.py:284
+#: basedata/models.py:301 basedata/models.py:393 basedata/models.py:419
+#: basedata/models.py:518 hr/models.py:37 organ/models.py:58 team/models.py:20
+msgid "name"
+msgstr ""
+
+#: basedata/admin.py:221 basedata/models.py:91 basedata/models.py:132
+#: basedata/models.py:438 basedata/models.py:521 customer/models.py:25
+#: hr/models.py:63 organ/models.py:29 organ/models.py:65 sale/models.py:39
+msgid "phone"
+msgstr ""
+
+#: basedata/admin.py:254 selfhelp/admin.py:207
+msgid "other info"
+msgstr ""
+
+#: basedata/admin.py:280
+msgid "import"
+msgstr ""
+
+#: basedata/admin.py:292 basedata/models.py:570 basedata/models.py:644
+#: invent/models.py:55 invent/models.py:143 invent/models.py:235
+#: invent/models.py:295 invent/models.py:346 purchase/models.py:36
+#: sale/models.py:36 sale/models.py:152 selfhelp/models.py:25
+#: selfhelp/models.py:127 selfhelp/models.py:177 selfhelp/models.py:285
+msgid "title"
+msgstr ""
+
+#: basedata/admin.py:293 basedata/models.py:645
+msgid "keywords"
+msgstr ""
+
+#: basedata/admin.py:324
+#, python-format
+msgid "publish selected %(verbose_name_plural)s"
+msgstr ""
+
+#: basedata/apps.py:9
+msgid "BaseData"
+msgstr ""
+
+#: basedata/models.py:21
+msgid "list code"
+msgstr ""
+
+#: basedata/models.py:22
+msgid "list name"
+msgstr ""
+
+#: basedata/models.py:23 syscfg/models.py:42 syscfg/models.py:43
+#: syscfg/models.py:51
+msgid "module"
+msgstr ""
+
+#: basedata/models.py:24 basedata/models.py:50 basedata/models.py:209
+#: basedata/models.py:229 basedata/models.py:302 basedata/models.py:341
+#: basedata/models.py:423 organ/models.py:18 organ/models.py:62
+#: organ/models.py:104 syscfg/models.py:39 syscfg/models.py:57
+#: syscfg/models.py:72
+msgid "in use"
+msgstr ""
+
+#: basedata/models.py:25
+msgid "is init"
+msgstr ""
+
+#: basedata/models.py:26
+msgid "is locked"
+msgstr ""
+
+#: basedata/models.py:27
+msgid "locked by"
+msgstr ""
+
+#: basedata/models.py:28
+msgid "locked time"
+msgstr ""
+
+#: basedata/models.py:38 basedata/models.py:39
+msgid "value list"
+msgstr ""
+
+#: basedata/models.py:46
+msgid "list group"
+msgstr ""
+
+#: basedata/models.py:48
+msgid "item code"
+msgstr ""
+
+#: basedata/models.py:49
+msgid "item name"
+msgstr ""
+
+#: basedata/models.py:51 basedata/models.py:266 organ/models.py:36
+#: organ/models.py:68 organ/models.py:108 syscfg/models.py:36
+#: syscfg/models.py:55
+msgid "weight"
+msgstr ""
+
+#: basedata/models.py:65 basedata/models.py:66
+msgid "list item"
+msgstr ""
+
+#: basedata/models.py:88
+msgid "address type"
+msgstr ""
+
+#: basedata/models.py:89 basedata/models.py:99 basedata/models.py:100
+#: organ/models.py:25
+msgid "address"
+msgstr ""
+
+#: basedata/models.py:90 hr/models.py:62 organ/models.py:26
+msgid "zipcode"
+msgstr ""
+
+#: basedata/models.py:92 basedata/models.py:131 organ/models.py:28
+#: organ/models.py:66 sale/models.py:38
+msgid "contacts"
+msgstr ""
+
+#: basedata/models.py:109
+msgid "Customer"
+msgstr ""
+
+#: basedata/models.py:110
+msgid "Supplier"
+msgstr ""
+
+#: basedata/models.py:119 basedata/models.py:152 basedata/models.py:195
+#: basedata/models.py:212 basedata/models.py:354 basedata/models.py:424
+#: basedata/models.py:439 basedata/models.py:520 basedata/models.py:549
+#: invent/models.py:26 invent/models.py:54 invent/models.py:141
+#: invent/models.py:234 invent/models.py:294 invent/models.py:345
+#: organ/apps.py:9 organ/models.py:39 organ/models.py:40 organ/models.py:56
+#: organ/models.py:95 purchase/models.py:35 purchase/models.py:199
+#: sale/models.py:35 sale/models.py:110 sale/models.py:151
+msgid "organization"
+msgstr ""
+
+#: basedata/models.py:120
+msgid "partner code"
+msgstr ""
+
+#: basedata/models.py:121
+msgid "partner name"
+msgstr ""
+
+#: basedata/models.py:122 basedata/models.py:177 organ/models.py:16
+#: organ/models.py:59 organ/models.py:99
+msgid "short name"
+msgstr ""
+
+#: basedata/models.py:123 basedata/models.py:178 basedata/models.py:265
+#: basedata/models.py:337 basedata/models.py:441 hr/models.py:57
+#: organ/models.py:17 organ/models.py:60 organ/models.py:100
+msgid "pinyin"
+msgstr ""
+
+#: basedata/models.py:124 basedata/models.py:647 organ/models.py:61
+msgid "type"
+msgstr ""
+
+#: basedata/models.py:125
+msgid "level"
+msgstr ""
+
+#: basedata/models.py:127 organ/models.py:20
+msgid "tax num"
+msgstr ""
+
+#: basedata/models.py:129 organ/models.py:22
+msgid "tax account"
+msgstr ""
+
+#: basedata/models.py:136 basedata/models.py:137 basedata/models.py:151
+#: basedata/models.py:180 purchase/models.py:32 purchase/models.py:157
+#: purchase/models.py:173 purchase/models.py:202 sale/models.py:32
+#: sale/models.py:113 sale/models.py:148
+msgid "partner"
+msgstr ""
+
+#: basedata/models.py:139
+msgid "view all customer"
+msgstr ""
+
+#: basedata/models.py:140
+msgid "view all supplier"
+msgstr ""
+
+#: basedata/models.py:148
+msgid "account num"
+msgstr ""
+
+#: basedata/models.py:149 basedata/models.py:451 customer/models.py:65
+msgid "bank name"
+msgstr ""
+
+#: basedata/models.py:163 basedata/models.py:164 basedata/models.py:450
+#: customer/models.py:66 purchase/models.py:205 sale/models.py:116
+#: selfhelp/models.py:183
+msgid "bank account"
+msgstr ""
+
+#: basedata/models.py:175
+msgid "project code"
+msgstr ""
+
+#: basedata/models.py:176 customer/models.py:11 customer/models.py:20
+#: customer/models.py:36 customer/models.py:61
+msgid "project name"
+msgstr ""
+
+#: basedata/models.py:181 basedata/models.py:576 basedata/models.py:650
+#: invent/models.py:57 invent/models.py:145 invent/models.py:241
+#: invent/models.py:299 invent/models.py:349 purchase/models.py:39
+#: sale/models.py:47 selfhelp/models.py:31 selfhelp/models.py:131
+#: selfhelp/models.py:184
+#: templates/admin/invent/inventory/change_form.html:146
+#: workflow/models.py:116
+msgid "status"
+msgstr ""
+
+#: basedata/models.py:182
+msgid "project type"
+msgstr ""
+
+#: basedata/models.py:184 basedata/models.py:318 basedata/models.py:421
+#: basedata/models.py:571 basedata/models.py:646 invent/models.py:238
+#: invent/models.py:347 purchase/models.py:37 selfhelp/models.py:26
+#: selfhelp/models.py:128 selfhelp/models.py:178 selfhelp/models.py:287
+#: syscfg/models.py:71 workflow/models.py:20 workflow/models.py:230
+msgid "description"
+msgstr ""
+
+#: basedata/models.py:186
+msgid "budget"
+msgstr ""
+
+#: basedata/models.py:187
+msgid "income"
+msgstr ""
+
+#: basedata/models.py:188
+msgid "expand"
+msgstr ""
+
+#: basedata/models.py:190
+msgid "blueprint"
+msgstr ""
+
+#: basedata/models.py:191 sale/models.py:216 sale/models.py:217
+msgid "offer sheet"
+msgstr ""
+
+#: basedata/models.py:192
+msgid "business document"
+msgstr ""
+
+#: basedata/models.py:194 basedata/models.py:211
+msgid "related users"
+msgstr ""
+
+#: basedata/models.py:198 basedata/models.py:199 invent/models.py:236
+#: selfhelp/models.py:30 selfhelp/models.py:129 selfhelp/models.py:179
+msgid "project"
+msgstr ""
+
+#: basedata/models.py:207 basedata/models.py:227 basedata/models.py:244
+#: basedata/models.py:283 basedata/models.py:418 basedata/models.py:643
+#: hr/models.py:36 invent/models.py:53 invent/models.py:140
+#: invent/models.py:233 invent/models.py:293 invent/models.py:344
+#: organ/models.py:57 purchase/models.py:31 sale/models.py:31
+#: sale/models.py:147 selfhelp/models.py:284 workflow/models.py:110
+#: workflow/models.py:183 workflow/models.py:211
+msgid "code"
+msgstr ""
+
+#: basedata/models.py:210 selfhelp/models.py:292
+msgid "location"
+msgstr ""
+
+#: basedata/models.py:218 basedata/models.py:219 basedata/models.py:346
+#: invent/models.py:27 invent/models.py:142 invent/models.py:387
+msgid "warehouse"
+msgstr ""
+
+#: basedata/models.py:235 basedata/models.py:236 basedata/models.py:347
+#: invent/models.py:29 invent/models.py:389 purchase/models.py:120
+#: sale/models.py:77 sale/models.py:226 selfhelp/models.py:107
+#: templates/admin/invent/inventory/change_form.html:145
+msgid "measure"
+msgstr ""
+
+#: basedata/models.py:247 basedata/models.py:282 basedata/models.py:422
+#: organ/models.py:55 organ/models.py:96 selfhelp/models.py:286
+#: syscfg/models.py:38 syscfg/models.py:73
+msgid "parent"
+msgstr ""
+
+#: basedata/models.py:253 basedata/models.py:254 basedata/models.py:263
+#: basedata/models.py:281
+msgid "trade"
+msgstr ""
+
+#: basedata/models.py:272 basedata/models.py:273 basedata/models.py:338
+#: sale/models.py:228
+msgid "brand"
+msgstr ""
+
+#: basedata/models.py:285
+msgid "path"
+msgstr ""
+
+#: basedata/models.py:291 basedata/models.py:292 basedata/models.py:339
+#: basedata/models.py:420
+msgid "category"
+msgstr ""
+
+#: basedata/models.py:300
+msgid "material category"
+msgstr ""
+
+#: basedata/models.py:308 basedata/models.py:309 basedata/models.py:349
+msgid "technical parameter"
+msgstr ""
+
+#: basedata/models.py:316
+msgid "technical name"
+msgstr ""
+
+#: basedata/models.py:317
+msgid "value"
+msgstr ""
+
+#: basedata/models.py:324 basedata/models.py:325
+msgid "technical value"
+msgstr ""
+
+#: basedata/models.py:333
+msgid "material code"
+msgstr ""
+
+#: basedata/models.py:334
+msgid "bar code"
+msgstr ""
+
+#: basedata/models.py:340
+msgid "mt type"
+msgstr ""
+
+#: basedata/models.py:342
+msgid "is equipment"
+msgstr ""
+
+#: basedata/models.py:343
+msgid "can sale"
+msgstr ""
+
+#: basedata/models.py:344 organ/models.py:63 organ/models.py:103
+msgid "is virtual"
+msgstr ""
+
+#: basedata/models.py:351 sale/models.py:79 sale/models.py:230
+msgid "stock price"
+msgstr ""
+
+#: basedata/models.py:352
+msgid "purchase price"
+msgstr ""
+
+#: basedata/models.py:353 sale/models.py:80 sale/models.py:231
+msgid "sale price"
+msgstr ""
+
+#: basedata/models.py:361 basedata/models.py:362 basedata/models.py:392
+#: invent/models.py:28 invent/models.py:388 purchase/models.py:119
+#: sale/models.py:76 sale/models.py:225 selfhelp/models.py:105
+msgid "material"
+msgstr ""
+
+#: basedata/models.py:379 basedata/models.py:380
+msgid "material parameter"
+msgstr ""
+
+#: basedata/models.py:388
+msgid "CHAR"
+msgstr ""
+
+#: basedata/models.py:389
+msgid "NUMBER"
+msgstr ""
+
+#: basedata/models.py:390
+msgid "DATE"
+msgstr ""
+
+#: basedata/models.py:394
+msgid "data type"
+msgstr ""
+
+#: basedata/models.py:395
+msgid "data source"
+msgstr ""
+
+#: basedata/models.py:401 selfhelp/models.py:92
+msgid "extra param"
+msgstr ""
+
+#: basedata/models.py:402
+msgid "extra params"
+msgstr ""
+
+#: basedata/models.py:410
+msgid "HR-DOMAIN"
+msgstr ""
+
+#: basedata/models.py:411
+msgid "OFFICE-DOMAIN"
+msgstr ""
+
+#: basedata/models.py:412
+msgid "PUBLIS-DOMAIN"
+msgstr ""
+
+#: basedata/models.py:413
+msgid "MUNADOMAIN"
+msgstr ""
+
+#: basedata/models.py:414
+msgid "BUSINESS"
+msgstr ""
+
+#: basedata/models.py:415
+msgid "OTHER"
+msgstr ""
+
+#: basedata/models.py:427 basedata/models.py:428 selfhelp/models.py:254
+msgid "expenses account"
+msgstr ""
+
+#: basedata/models.py:437 hr/models.py:55
+msgid "employee number"
+msgstr ""
+
+#: basedata/models.py:440 hr/models.py:56
+msgid "employee name"
+msgstr ""
+
+#: basedata/models.py:442 basedata/models.py:519 hr/models.py:58
+msgid "birthday"
+msgstr ""
+
+#: basedata/models.py:444 hr/models.py:59
+msgid "gender"
+msgstr ""
+
+#: basedata/models.py:445 hr/models.py:60
+msgid "id card"
+msgstr ""
+
+#: basedata/models.py:447
+msgid "nationality"
+msgstr ""
+
+#: basedata/models.py:448
+msgid "hometown"
+msgstr ""
+
+#: basedata/models.py:449
+msgid "home address"
+msgstr ""
+
+#: basedata/models.py:452
+msgid "emergency contacts"
+msgstr ""
+
+#: basedata/models.py:453 organ/models.py:31 organ/models.py:67
+msgid "email"
+msgstr ""
+
+#: basedata/models.py:454
+msgid "office phone"
+msgstr ""
+
+#: basedata/models.py:456 basedata/models.py:550 organ/models.py:114
+#: organ/models.py:115
+msgid "position"
+msgstr ""
+
+#: basedata/models.py:457 hr/models.py:67
+msgid "employee rank"
+msgstr ""
+
+#: basedata/models.py:459
+msgid "workday"
+msgstr ""
+
+#: basedata/models.py:460
+msgid "start date"
+msgstr ""
+
+#: basedata/models.py:462
+msgid "religion"
+msgstr ""
+
+#: basedata/models.py:463
+msgid "marital status"
+msgstr ""
+
+#: basedata/models.py:465
+msgid "political party"
+msgstr ""
+
+#: basedata/models.py:466
+msgid "nation"
+msgstr ""
+
+#: basedata/models.py:468 hr/models.py:68
+msgid "employ ygxs"
+msgstr ""
+
+#: basedata/models.py:469
+msgid "employ status"
+msgstr ""
+
+#: basedata/models.py:470 hr/models.py:69
+msgid "employ category"
+msgstr ""
+
+#: basedata/models.py:472
+msgid "literacy"
+msgstr ""
+
+#: basedata/models.py:473
+msgid "major type"
+msgstr ""
+
+#: basedata/models.py:474 basedata/models.py:537
+msgid "major degree"
+msgstr ""
+
+#: basedata/models.py:476
+msgid "special job"
+msgstr ""
+
+#: basedata/models.py:477
+msgid "health"
+msgstr ""
+
+#: basedata/models.py:479
+msgid "tag1 fzjr"
+msgstr ""
+
+#: basedata/models.py:480
+msgid "tag2 dwld"
+msgstr ""
+
+#: basedata/models.py:481
+msgid "tag3 dsjs"
+msgstr ""
+
+#: basedata/models.py:482
+msgid "tag4 byzk"
+msgstr ""
+
+#: basedata/models.py:484 basedata/models.py:649 invent/models.py:56
+#: invent/models.py:144 purchase/models.py:38 selfhelp/models.py:33
+#: selfhelp/models.py:130 selfhelp/models.py:181
+msgid "user"
+msgstr ""
+
+#: basedata/models.py:505 basedata/models.py:506 basedata/models.py:523
+#: basedata/models.py:538 basedata/models.py:551 hr/models.py:91
+#: hr/models.py:109 hr/models.py:120
+msgid "employee"
+msgstr ""
+
+#: basedata/models.py:508
+msgid "view all employee"
+msgstr ""
+
+#: basedata/models.py:516
+msgid "family title"
+msgstr ""
+
+#: basedata/models.py:517
+msgid "social status"
+msgstr ""
+
+#: basedata/models.py:522
+msgid "emergency"
+msgstr ""
+
+#: basedata/models.py:526 basedata/models.py:527
+msgid "family member"
+msgstr ""
+
+#: basedata/models.py:534
+msgid "edu type"
+msgstr ""
+
+#: basedata/models.py:535
+msgid "school"
+msgstr ""
+
+#: basedata/models.py:536
+msgid "major"
+msgstr ""
+
+#: basedata/models.py:541 basedata/models.py:542
+msgid "education experience"
+msgstr ""
+
+#: basedata/models.py:554 basedata/models.py:555
+msgid "work experience"
+msgstr ""
+
+#: basedata/models.py:566 invent/models.py:49 invent/models.py:135
+#: invent/models.py:228 invent/models.py:288 invent/models.py:339
+#: purchase/models.py:24 sale/models.py:24 sale/models.py:142
+#: selfhelp/models.py:120 selfhelp/models.py:170 workflow/models.py:102
+msgid "NEW"
+msgstr ""
+
+#: basedata/models.py:567 invent/models.py:50 invent/models.py:137
+#: invent/models.py:230 invent/models.py:290 invent/models.py:341
+#: templates/admin/invent/inventory/change_form.html:158
+msgid "EXECUTED"
+msgstr ""
+
+#: basedata/models.py:569
+msgid "date"
+msgstr ""
+
+#: basedata/models.py:572 workflow/models.py:21
+msgid "content type"
+msgstr ""
+
+#: basedata/models.py:573 basedata/models.py:653 invent/models.py:59
+#: purchase/models.py:44 selfhelp/models.py:34 selfhelp/models.py:300
+msgid "attach"
+msgstr ""
+
+#: basedata/models.py:574
+msgid "clear old data?"
+msgstr ""
+
+#: basedata/models.py:575
+msgid "handler class"
+msgstr ""
+
+#: basedata/models.py:626 basedata/models.py:627
+msgid "data import"
+msgstr ""
+
+#: basedata/models.py:635
+msgid "SYSTEM MANUAL"
+msgstr ""
+
+#: basedata/models.py:636
+msgid "BUSINESS DOC"
+msgstr ""
+
+#: basedata/models.py:639
+msgid "draft"
+msgstr ""
+
+#: basedata/models.py:640 selfhelp/models.py:298
+msgid "published"
+msgstr ""
+
+#: basedata/models.py:648 selfhelp/models.py:27
+msgid "business domain"
+msgstr ""
+
+#: basedata/models.py:651
+msgid "publish date"
+msgstr ""
+
+#: basedata/models.py:652
+msgid "size"
+msgstr ""
+
+#: basedata/models.py:656 templates/admin/base.html:38
+msgid "document"
+msgstr ""
+
+#: basedata/models.py:657
+msgid "documents"
+msgstr ""
+
+#: basedata/views.py:18 invent/views.py:21 invent/views.py:54
+#: invent/views.py:86 invent/views.py:119 invent/views.py:152
+#: selfhelp/views.py:14 workflow/views.py:89 workflow/views.py:174
+msgid "Are you sure?"
+msgstr ""
+
+#: basedata/views.py:27
+msgid "data import successfully"
+msgstr ""
+
+#: common/const.py:21
+msgid "OFF"
+msgstr ""
+
+#: common/const.py:22
+msgid "ON"
+msgstr ""
+
+#: common/generic.py:76 syscfg/models.py:14 workflow/models.py:25
+msgid "begin date"
+msgstr ""
+
+#: common/generic.py:77 syscfg/models.py:15 workflow/models.py:26
+msgid "end date"
+msgstr ""
+
+#: common/generic.py:78
+msgid "creator"
+msgstr ""
+
+#: common/generic.py:79
+msgid "modifier"
+msgstr ""
+
+#: common/generic.py:80
+msgid "creation"
+msgstr ""
+
+#: common/generic.py:81
+msgid "modification"
+msgstr ""
+
+#: common/generic.py:305
+#, python-format
+msgid "export selected %(verbose_name_plural)s"
+msgstr ""
+
+#: customer/apps.py:9
+msgid "customer resource"
+msgstr ""
+
+#: customer/models.py:12 customer/models.py:41 workflow/models.py:114
+msgid "start time"
+msgstr ""
+
+#: customer/models.py:13
+msgid "project desc"
+msgstr ""
+
+#: customer/models.py:16
+msgid "sale project"
+msgstr ""
+
+#: customer/models.py:17
+msgid "sale projects"
+msgstr ""
+
+#: customer/models.py:21 customer/models.py:40 customer/models.py:63
+msgid "customer name"
+msgstr ""
+
+#: customer/models.py:22
+msgid "customer birth"
+msgstr ""
+
+#: customer/models.py:23
+msgid "customer gender"
+msgstr ""
+
+#: customer/models.py:24
+msgid "customer addr"
+msgstr ""
+
+#: customer/models.py:26
+msgid "Email"
+msgstr ""
+
+#: customer/models.py:27
+msgid "QQ"
+msgstr ""
+
+#: customer/models.py:28 customer/models.py:39 customer/models.py:62
+msgid "seller"
+msgstr ""
+
+#: customer/models.py:29
+msgid "beizhu"
+msgstr ""
+
+#: customer/models.py:32
+msgid "sale customer"
+msgstr ""
+
+#: customer/models.py:33
+msgid "sale customers"
+msgstr ""
+
+#: customer/models.py:37
+msgid "sale leader"
+msgstr ""
+
+#: customer/models.py:38
+msgid "team leader"
+msgstr ""
+
+#: customer/models.py:42 customer/models.py:68
+msgid "buy sum"
+msgstr ""
+
+#: customer/models.py:43 customer/models.py:70
+msgid "buy deadline"
+msgstr ""
+
+#: customer/models.py:44 customer/models.py:71
+msgid "year rate"
+msgstr ""
+
+#: customer/models.py:45
+msgid "commission sale leader"
+msgstr ""
+
+#: customer/models.py:46
+msgid "commission team leader"
+msgstr ""
+
+#: customer/models.py:47
+msgid "commission sale leader rate"
+msgstr ""
+
+#: customer/models.py:48
+msgid "commission team leader rate"
+msgstr ""
+
+#: customer/models.py:49
+msgid "commission sale leader sum"
+msgstr ""
+
+#: customer/models.py:50
+msgid "commission team leader sum"
+msgstr ""
+
+#: customer/models.py:51
+msgid "commission deadline"
+msgstr ""
+
+#: customer/models.py:52
+msgid "manager"
+msgstr ""
+
+#: customer/models.py:55 sale/models.py:67 sale/models.py:68
+#: sale/models.py:112
+msgid "sale order"
+msgstr ""
+
+#: customer/models.py:56
+msgid "sale orders"
+msgstr ""
+
+#: customer/models.py:59
+msgid "number"
+msgstr ""
+
+#: customer/models.py:60
+msgid "into way"
+msgstr ""
+
+#: customer/models.py:64
+msgid "customer ID"
+msgstr ""
+
+#: customer/models.py:67
+msgid "buy date"
+msgstr ""
+
+#: customer/models.py:69
+msgid "buy category"
+msgstr ""
+
+#: customer/models.py:74
+msgid "sale contract"
+msgstr ""
+
+#: customer/models.py:75
+msgid "sale contracts"
+msgstr ""
+
+#: hr/admin.py:37
+msgid "org distribute"
+msgstr ""
+
+#: hr/apps.py:11
+msgid "human resource"
+msgstr ""
+
+#: hr/models.py:38 selfhelp/models.py:28 selfhelp/models.py:293
+msgid "classification"
+msgstr ""
+
+#: hr/models.py:39
+msgid "plus or minus"
+msgstr ""
+
+#: hr/models.py:40
+msgid "is required"
+msgstr ""
+
+#: hr/models.py:46 hr/models.py:92 hr/models.py:100 hr/models.py:101
+msgid "salary item"
+msgstr ""
+
+#: hr/models.py:47
+msgid "salary items"
+msgstr ""
+
+#: hr/models.py:61
+msgid "mail address"
+msgstr ""
+
+#: hr/models.py:65
+msgid "guider"
+msgstr ""
+
+#: hr/models.py:66
+msgid "designate position"
+msgstr ""
+
+#: hr/models.py:71
+msgid "probation months"
+msgstr ""
+
+#: hr/models.py:72
+msgid "probation begin"
+msgstr ""
+
+#: hr/models.py:73
+msgid "probation end"
+msgstr ""
+
+#: hr/models.py:76
+msgid "profile"
+msgstr ""
+
+#: hr/models.py:79 hr/models.py:90
+msgid "employee entry"
+msgstr ""
+
+#: hr/models.py:80
+msgid "employee entries"
+msgstr ""
+
+#: hr/models.py:82
+msgid "modify salary item"
+msgstr ""
+
+#: hr/models.py:93
+msgid "calculate way"
+msgstr ""
+
+#: hr/models.py:94
+msgid "fixed value"
+msgstr ""
+
+#: hr/models.py:95
+msgid "base value"
+msgstr ""
+
+#: hr/models.py:96
+msgid "org percent"
+msgstr ""
+
+#: hr/models.py:97
+msgid "employee percent"
+msgstr ""
+
+#: hr/models.py:112
+msgid "employee transfer"
+msgstr ""
+
+#: hr/models.py:113
+msgid "employee transfers"
+msgstr ""
+
+#: hr/models.py:123
+msgid "employee departure"
+msgstr ""
+
+#: hr/models.py:124
+msgid "employee departures"
+msgstr ""
+
+#: invent/admin.py:79 invent/admin.py:150
+msgid "Action Stock In"
+msgstr ""
+
+#: invent/admin.py:126
+msgid "Action Stock Out"
+msgstr ""
+
+#: invent/admin.py:198
+msgid "Action Ware Return"
+msgstr ""
+
+#: invent/admin.py:231
+msgid "Action Ware Adjust"
+msgstr ""
+
+#: invent/apps.py:11
+msgid "inventory manage"
+msgstr ""
+
+#: invent/models.py:30 invent/models.py:390 purchase/models.py:122
+#: sale/models.py:78 sale/models.py:227
+#: templates/admin/invent/inventory/change_form.html:144
+msgid "count"
+msgstr ""
+
+#: invent/models.py:31 invent/models.py:149 invent/models.py:391
+msgid "batch"
+msgstr ""
+
+#: invent/models.py:32 invent/models.py:392 purchase/models.py:121
+#: selfhelp/models.py:108
+#: templates/admin/invent/inventory/change_form.html:143
+msgid "price"
+msgstr ""
+
+#: invent/models.py:39 invent/models.py:40
+msgid "Inventory"
+msgstr ""
+
+#: invent/models.py:58 invent/models.py:146 invent/models.py:242
+#: invent/models.py:300 invent/models.py:350 purchase/models.py:129
+#: templates/admin/invent/inventory/change_form.html:141
+msgid "execute time"
+msgstr ""
+
+#: invent/models.py:60 invent/models.py:239 invent/models.py:297
+#: purchase/models.py:124
+msgid "money of amount"
+msgstr ""
+
+#: invent/models.py:123
+msgid "none material was found"
+msgstr ""
+
+#: invent/models.py:126 invent/models.py:127
+msgid "Initial Inventory"
+msgstr ""
+
+#: invent/models.py:136
+msgid "QUALITY TESTING"
+msgstr ""
+
+#: invent/models.py:147 purchase/models.py:109 purchase/models.py:118
+#: purchase/models.py:172 purchase/models.py:201
+msgid "purchase order"
+msgstr ""
+
+#: invent/models.py:148 invent/models.py:163
+msgid "stock in money of amount"
+msgstr ""
+
+#: invent/models.py:164 purchase/models.py:43
+msgid "entry time"
+msgstr ""
+
+#: invent/models.py:219 invent/models.py:220
+msgid "StockIn"
+msgstr ""
+
+#: invent/models.py:229 invent/models.py:289 invent/models.py:340
+#: purchase/models.py:25 sale/models.py:25 sale/models.py:143
+#: selfhelp/models.py:121 selfhelp/models.py:171 workflow/models.py:103
+msgid "IN PROGRESS"
+msgstr ""
+
+#: invent/models.py:237 selfhelp/models.py:180
+msgid "work order"
+msgstr ""
+
+#: invent/models.py:240 invent/models.py:298 invent/models.py:348
+msgid "out user"
+msgstr ""
+
+#: invent/models.py:250
+msgid "stock out time"
+msgstr ""
+
+#: invent/models.py:251
+msgid "stock out amount"
+msgstr ""
+
+#: invent/models.py:279 invent/models.py:280 invent/models.py:296
+msgid "StockOut"
+msgstr ""
+
+#: invent/models.py:330 invent/models.py:331
+msgid "ware return"
+msgstr ""
+
+#: invent/models.py:370 invent/models.py:371
+msgid "ware adjust"
+msgstr ""
+
+#: invent/models.py:380
+msgid "PLUS"
+msgstr ""
+
+#: invent/models.py:381
+msgid "MINUS"
+msgstr ""
+
+#: invent/models.py:384 sale/models.py:83 sale/models.py:234 team/models.py:11
+msgid "create time"
+msgstr ""
+
+#: invent/models.py:385 sale/models.py:84 sale/models.py:160
+#: sale/models.py:235
+msgid "executed"
+msgstr ""
+
+#: invent/models.py:386 sale/models.py:85 sale/models.py:161
+#: sale/models.py:236
+msgid "event time"
+msgstr ""
+
+#: invent/models.py:393
+msgid "plus or minus property"
+msgstr ""
+
+#: invent/models.py:394 templates/admin/invent/inventory/change_form.html:147
+msgid "source"
+msgstr ""
+
+#: invent/models.py:404 invent/models.py:405
+msgid "init item"
+msgstr ""
+
+#: invent/models.py:413 purchase/models.py:160 purchase/models.py:161
+msgid "po item"
+msgstr ""
+
+#: invent/models.py:428 invent/models.py:429
+msgid "in item"
+msgstr ""
+
+#: invent/models.py:434
+msgid "new price"
+msgstr ""
+
+#: invent/models.py:446 invent/models.py:481
+msgid "inventory material"
+msgstr ""
+
+#: invent/models.py:459 invent/models.py:460 invent/models.py:468
+msgid "out item"
+msgstr ""
+
+#: invent/models.py:469
+msgid "out count"
+msgstr ""
+
+#: invent/models.py:472 invent/models.py:473
+msgid "return item"
+msgstr ""
+
+#: invent/models.py:492 invent/models.py:493
+msgid "adjust item"
+msgstr ""
+
+#: invent/views.py:29 invent/views.py:94 invent/views.py:127
+#: invent/views.py:160
+msgid "check in successfully"
+msgstr ""
+
+#: invent/views.py:62
+msgid "check out successfully"
+msgstr ""
+
+#: organ/models.py:14
+msgid "organ code"
+msgstr ""
+
+#: organ/models.py:15
+msgid "organ name"
+msgstr ""
+
+#: organ/models.py:24
+msgid "representative "
+msgstr ""
+
+#: organ/models.py:27 organ/models.py:64 sale/models.py:40
+msgid "fax"
+msgstr ""
+
+#: organ/models.py:30
+msgid "website"
+msgstr ""
+
+#: organ/models.py:32
+msgid "license code"
+msgstr ""
+
+#: organ/models.py:33
+msgid "certificate code"
+msgstr ""
+
+#: organ/models.py:34
+msgid "business license"
+msgstr ""
+
+#: organ/models.py:35
+msgid "organization code certificate"
+msgstr ""
+
+#: organ/models.py:48
+msgid "BRANCH"
+msgstr ""
+
+#: organ/models.py:49
+msgid "DEPARTMENT"
+msgstr ""
+
+#: organ/models.py:50
+msgid "OFFICE"
+msgstr ""
+
+#: organ/models.py:51
+msgid "TEAM"
+msgstr ""
+
+#: organ/models.py:52
+msgid "COMMITTEE"
+msgstr ""
+
+#: organ/models.py:71 organ/models.py:72 organ/models.py:94
+msgid "org unit"
+msgstr ""
+
+#: organ/models.py:80
+msgid "Admin Position"
+msgstr ""
+
+#: organ/models.py:81
+msgid "Sale Position"
+msgstr ""
+
+#: organ/models.py:82
+msgid "Technology Position"
+msgstr ""
+
+#: organ/models.py:83
+msgid "Produce Position"
+msgstr ""
+
+#: organ/models.py:87
+msgid "BASIC"
+msgstr ""
+
+#: organ/models.py:88
+msgid "MEDIUM"
+msgstr ""
+
+#: organ/models.py:89
+msgid "SENIOR"
+msgstr ""
+
+#: organ/models.py:90
+msgid "PROFESSOR"
+msgstr ""
+
+#: organ/models.py:91
+msgid "EXPERT"
+msgstr ""
+
+#: organ/models.py:97
+msgid "position code"
+msgstr ""
+
+#: organ/models.py:98
+msgid "position name"
+msgstr ""
+
+#: organ/models.py:101
+msgid "position series"
+msgstr ""
+
+#: organ/models.py:102
+msgid "position grade"
+msgstr ""
+
+#: organ/models.py:105
+msgid "position description"
+msgstr ""
+
+#: organ/models.py:106
+msgid "qualification"
+msgstr ""
+
+#: organ/models.py:107
+msgid "reference"
+msgstr ""
+
+#: purchase/apps.py:11
+msgid "purchase manage"
+msgstr ""
+
+#: purchase/models.py:26 sale/models.py:26 sale/models.py:144
+msgid "DROP"
+msgstr ""
+
+#: purchase/models.py:27 sale/models.py:27 sale/models.py:145
+#: selfhelp/models.py:122 selfhelp/models.py:172 workflow/models.py:106
+msgid "APPROVED"
+msgstr ""
+
+#: purchase/models.py:28
+msgid "ALREADY STOCK IN"
+msgstr ""
+
+#: purchase/models.py:33 sale/models.py:33
+msgid "order date"
+msgstr ""
+
+#: purchase/models.py:34
+msgid "arrive date"
+msgstr ""
+
+#: purchase/models.py:40 sale/models.py:44 sale/models.py:155
+msgid "money amount"
+msgstr ""
+
+#: purchase/models.py:41 purchase/models.py:125 sale/models.py:45
+#: sale/models.py:156
+msgid "discount amount"
+msgstr ""
+
+#: purchase/models.py:42
+msgid "entry status"
+msgstr ""
+
+#: purchase/models.py:105 purchase/models.py:175
+msgid "invoice amount"
+msgstr ""
+
+#: purchase/models.py:106 purchase/models.py:204 selfhelp/models.py:189
+msgid "pay amount"
+msgstr ""
+
+#: purchase/models.py:110
+msgid "purchase orders"
+msgstr ""
+
+#: purchase/models.py:123 sale/models.py:81 sale/models.py:232
+msgid "discount price"
+msgstr ""
+
+#: purchase/models.py:126 sale/models.py:82 sale/models.py:233
+msgid "tax rate"
+msgstr ""
+
+#: purchase/models.py:127
+msgid "wo item"
+msgstr ""
+
+#: purchase/models.py:128
+msgid "is in stock"
+msgstr ""
+
+#: purchase/models.py:130
+msgid "entry count"
+msgstr ""
+
+#: purchase/models.py:131
+msgid "left count"
+msgstr ""
+
+#: purchase/models.py:169
+msgid "invoice date"
+msgstr ""
+
+#: purchase/models.py:170
+msgid "invoice code"
+msgstr ""
+
+#: purchase/models.py:171
+msgid "invoice number"
+msgstr ""
+
+#: purchase/models.py:174 purchase/models.py:203
+msgid "po amount"
+msgstr ""
+
+#: purchase/models.py:176
+msgid "invoice file"
+msgstr ""
+
+#: purchase/models.py:189 purchase/models.py:190
+msgid "Invoice"
+msgstr ""
+
+#: purchase/models.py:198
+msgid "pay date"
+msgstr ""
+
+#: purchase/models.py:200
+msgid "pay code"
+msgstr ""
+
+#: purchase/models.py:206
+msgid "response code"
+msgstr ""
+
+#: purchase/models.py:220 purchase/models.py:221
+msgid "Payment"
+msgstr ""
+
+#: sale/apps.py:11
+msgid "sale management"
+msgstr ""
+
+#: sale/models.py:28
+msgid "ALREADY STOCK OUT"
+msgstr ""
+
+#: sale/models.py:34 sale/models.py:150
+msgid "deliver date"
+msgstr ""
+
+#: sale/models.py:41
+msgid "deliver address"
+msgstr ""
+
+#: sale/models.py:42
+msgid "invoice type"
+msgstr ""
+
+#: sale/models.py:46
+msgid "sales man"
+msgstr ""
+
+#: sale/models.py:64 sale/models.py:115
+msgid "collection amount"
+msgstr ""
+
+#: sale/models.py:100 sale/models.py:101
+msgid "order detail"
+msgstr ""
+
+#: sale/models.py:109
+msgid "collection date"
+msgstr ""
+
+#: sale/models.py:111
+msgid "collection code"
+msgstr ""
+
+#: sale/models.py:114
+msgid "order amount"
+msgstr ""
+
+#: sale/models.py:132 sale/models.py:133
+msgid "Payment Collection"
+msgstr ""
+
+#: sale/models.py:149
+msgid "offer date"
+msgstr ""
+
+#: sale/models.py:157
+msgid "offer man"
+msgstr ""
+
+#: sale/models.py:159
+msgid "offer sheet file"
+msgstr ""
+
+#: sale/models.py:229
+msgid "cost price"
+msgstr ""
+
+#: sale/models.py:251 sale/models.py:252
+msgid "offer detail"
+msgstr ""
+
+#: selfhelp/admin.py:100 selfhelp/admin.py:144 selfhelp/views.py:42
+msgid "pay"
+msgstr ""
+
+#: selfhelp/admin.py:142
+msgid "fico"
+msgstr ""
+
+#: selfhelp/apps.py:11
+msgid "self help"
+msgstr ""
+
+#: selfhelp/models.py:23
+msgid "workorder code"
+msgstr ""
+
+#: selfhelp/models.py:24
+msgid "refer wo"
+msgstr ""
+
+#: selfhelp/models.py:29
+msgid "service name"
+msgstr ""
+
+#: selfhelp/models.py:32
+msgid "answer"
+msgstr ""
+
+#: selfhelp/models.py:35
+msgid "to be imported detail"
+msgstr ""
+
+#: selfhelp/models.py:80 selfhelp/models.py:81
+msgid "workorder apply"
+msgstr ""
+
+#: selfhelp/models.py:91 selfhelp/models.py:104
+msgid "workorder"
+msgstr ""
+
+#: selfhelp/models.py:93
+msgid "param value"
+msgstr ""
+
+#: selfhelp/models.py:96
+msgid "extra value"
+msgstr ""
+
+#: selfhelp/models.py:97
+msgid "extra values"
+msgstr ""
+
+#: selfhelp/models.py:106
+msgid "amount"
+msgstr ""
+
+#: selfhelp/models.py:111
+msgid "workorder item"
+msgstr ""
+
+#: selfhelp/models.py:112
+msgid "workorder items"
+msgstr ""
+
+#: selfhelp/models.py:123 selfhelp/models.py:173
+msgid "PAYED"
+msgstr ""
+
+#: selfhelp/models.py:126
+msgid "loan code"
+msgstr ""
+
+#: selfhelp/models.py:132
+msgid "logout time"
+msgstr ""
+
+#: selfhelp/models.py:133 selfhelp/models.py:187
+msgid "loan amount"
+msgstr ""
+
+#: selfhelp/models.py:134 selfhelp/models.py:188
+msgid "logout amount"
+msgstr ""
+
+#: selfhelp/models.py:135 selfhelp/models.py:191
+msgid "pay user"
+msgstr ""
+
+#: selfhelp/models.py:136 selfhelp/models.py:190
+msgid "pay time"
+msgstr ""
+
+#: selfhelp/models.py:137
+msgid "is clear"
+msgstr ""
+
+#: selfhelp/models.py:149 selfhelp/models.py:238
+msgid "applier"
+msgstr ""
+
+#: selfhelp/models.py:158
+msgid "loan"
+msgstr ""
+
+#: selfhelp/models.py:159
+msgid "loans"
+msgstr ""
+
+#: selfhelp/models.py:161 selfhelp/models.py:244
+msgid "financial pay"
+msgstr ""
+
+#: selfhelp/models.py:176
+msgid "fee code"
+msgstr ""
+
+#: selfhelp/models.py:182
+msgid "cost center"
+msgstr ""
+
+#: selfhelp/models.py:185 selfhelp/models.py:256
+msgid "amount of money"
+msgstr ""
+
+#: selfhelp/models.py:186
+msgid "loan record"
+msgstr ""
+
+#: selfhelp/models.py:241 selfhelp/models.py:253
+msgid "reimbursement"
+msgstr ""
+
+#: selfhelp/models.py:242
+msgid "reimbursements"
+msgstr ""
+
+#: selfhelp/models.py:255
+msgid "occur date"
+msgstr ""
+
+#: selfhelp/models.py:267
+msgid "fee item"
+msgstr ""
+
+#: selfhelp/models.py:268
+msgid "fee items"
+msgstr ""
+
+#: selfhelp/models.py:276
+msgid "Train"
+msgstr ""
+
+#: selfhelp/models.py:277
+msgid "Meeting"
+msgstr ""
+
+#: selfhelp/models.py:278
+msgid "Community"
+msgstr ""
+
+#: selfhelp/models.py:281
+msgid "begin time"
+msgstr ""
+
+#: selfhelp/models.py:282
+msgid "end time"
+msgstr ""
+
+#: selfhelp/models.py:283
+msgid "enroll deadline"
+msgstr ""
+
+#: selfhelp/models.py:288
+msgid "host"
+msgstr ""
+
+#: selfhelp/models.py:289
+msgid "speaker"
+msgstr ""
+
+#: selfhelp/models.py:290
+msgid "accept enroll"
+msgstr ""
+
+#: selfhelp/models.py:291
+msgid "room"
+msgstr ""
+
+#: selfhelp/models.py:294
+msgid "mail list"
+msgstr ""
+
+#: selfhelp/models.py:295
+msgid "mail notice"
+msgstr ""
+
+#: selfhelp/models.py:296 workflow/models.py:65
+msgid "short message notice"
+msgstr ""
+
+#: selfhelp/models.py:297
+msgid "weixin notice"
+msgstr ""
+
+#: selfhelp/models.py:299
+msgid "publish time"
+msgstr ""
+
+#: selfhelp/models.py:303
+msgid "activity"
+msgstr ""
+
+#: selfhelp/models.py:304
+msgid "activities"
+msgstr ""
+
+#: selfhelp/models.py:319
+msgid "feedback time"
+msgstr ""
+
+#: selfhelp/models.py:320
+msgid "rank"
+msgstr ""
+
+#: selfhelp/models.py:321
+msgid "suggest"
+msgstr ""
+
+#: selfhelp/models.py:330
+msgid "enroll time"
+msgstr ""
+
+#: selfhelp/views.py:30
+msgid "action successfully"
+msgstr ""
+
+#: syscfg/apps.py:9
+msgid "SysConfig"
+msgstr ""
+
+#: syscfg/models.py:16
+msgid "site name"
+msgstr ""
+
+#: syscfg/models.py:17
+msgid "site description"
+msgstr ""
+
+#: syscfg/models.py:18
+msgid "administrator"
+msgstr ""
+
+#: syscfg/models.py:24 syscfg/models.py:25
+msgid "Site"
+msgstr ""
+
+#: syscfg/models.py:33
+msgid "module code"
+msgstr ""
+
+#: syscfg/models.py:34
+msgid "module name"
+msgstr ""
+
+#: syscfg/models.py:35
+msgid "module url"
+msgstr ""
+
+#: syscfg/models.py:37 syscfg/models.py:56
+msgid "style class"
+msgstr ""
+
+#: syscfg/models.py:52
+msgid "menu code"
+msgstr ""
+
+#: syscfg/models.py:53
+msgid "menu name"
+msgstr ""
+
+#: syscfg/models.py:54
+msgid "menu url"
+msgstr ""
+
+#: syscfg/models.py:60 syscfg/models.py:61
+msgid "menu"
+msgstr ""
+
+#: syscfg/models.py:69
+msgid "role code"
+msgstr ""
+
+#: syscfg/models.py:70
+msgid "role name"
+msgstr ""
+
+#: syscfg/models.py:74
+msgid "role users"
+msgstr ""
+
+#: syscfg/models.py:75
+msgid "role menus"
+msgstr ""
+
+#: syscfg/models.py:78 syscfg/models.py:79
+msgid "role"
+msgstr ""
+
+#: team/apps.py:9 team/models.py:16
+msgid "sale team"
+msgstr ""
+
+#: team/models.py:10 team/models.py:12
+msgid "team name"
+msgstr ""
+
+#: team/models.py:13
+msgid "team desc"
+msgstr ""
+
+#: team/models.py:17
+msgid "sale teams"
+msgstr ""
+
+#: team/models.py:21
+msgid "passwd"
+msgstr ""
+
+#: team/models.py:22
+msgid "project team"
+msgstr ""
+
+#: team/models.py:23
+msgid "enter date"
+msgstr ""
+
+#: team/models.py:26
+msgid "sale employee"
+msgstr ""
+
+#: team/models.py:27
+msgid "sale employees"
+msgstr ""
+
+#: templates/admin/app_index.html:9 templates/admin/base.html:59
+#: templates/admin/change_form.html:18 templates/admin/index.html:14
+#: templates/admin/invent/inventory/change_form.html:18
+#: templates/admin/invent/stockin/change_form.html:18
+#: templates/admin/invent/stockin/in_confirmation.html:8
+#: templates/admin/invent/stockout/change_form.html:18
+#: templates/admin/invent/stockout/out_confirmation.html:8
+#: templates/admin/object_history.html:8
+#: templates/admin/selfhelp/workorder/change_form.html:18
+#: templates/admin/workflow/node/change_form.html:18
+#: templates/default/workflow/workflow_approve_confirmation.html:8
+#: templates/default/workflow/workflow_start_confirmation.html:8
+msgid "Home"
+msgstr ""
+
+#: templates/admin/base.html:32
+msgid "Welcome,"
+msgstr ""
+
+#: templates/admin/base.html:36 workflow/models.py:240 workflow/models.py:241
+msgid "workflow todo"
+msgstr ""
+
+#: templates/admin/base.html:43
+msgid "Documentation"
+msgstr ""
+
+#: templates/admin/base.html:47
+msgid "Change password"
+msgstr ""
+
+#: templates/admin/base.html:49
+msgid "Log out"
+msgstr ""
+
+#: templates/admin/change_form.html:21 templates/admin/index.html:42
+#: templates/admin/invent/inventory/change_form.html:21
+#: templates/admin/invent/stockin/change_form.html:21
+#: templates/admin/invent/stockout/change_form.html:21
+#: templates/admin/selfhelp/workorder/change_form.html:21
+#: templates/admin/workflow/node/change_form.html:21
+msgid "Add"
+msgstr ""
+
+#: templates/admin/change_form.html:33
+#: templates/admin/invent/inventory/change_form.html:33
+#: templates/admin/invent/stockin/change_form.html:33
+#: templates/admin/invent/stockout/change_form.html:33
+#: templates/admin/object_history.html:12
+#: templates/admin/selfhelp/workorder/change_form.html:33
+#: templates/admin/workflow/node/change_form.html:33
+msgid "History"
+msgstr ""
+
+#: templates/admin/change_form.html:35
+#: templates/admin/invent/inventory/change_form.html:35
+#: templates/admin/invent/stockin/change_form.html:35
+#: templates/admin/invent/stockout/change_form.html:35
+#: templates/admin/selfhelp/workorder/change_form.html:35
+#: templates/admin/workflow/node/change_form.html:35
+msgid "View on site"
+msgstr ""
+
+#: templates/admin/change_form.html:47
+#: templates/admin/invent/inventory/change_form.html:47
+#: templates/admin/invent/stockin/change_form.html:47
+#: templates/admin/invent/stockout/change_form.html:47
+#: templates/admin/selfhelp/workorder/change_form.html:47
+#: templates/admin/workflow/node/change_form.html:47
+#: templates/default/workflow/workflow_approve_confirmation.html:12
+msgid "workflow approve"
+msgstr ""
+
+#: templates/admin/change_form.html:50
+#: templates/admin/invent/inventory/change_form.html:50
+#: templates/admin/invent/stockin/change_form.html:50
+#: templates/admin/invent/stockout/change_form.html:50
+#: templates/admin/selfhelp/workorder/change_form.html:50
+#: templates/admin/workflow/node/change_form.html:50
+msgid "restart workflow"
+msgstr ""
+
+#: templates/admin/change_form.html:51
+#: templates/admin/invent/inventory/change_form.html:51
+#: templates/admin/invent/stockin/change_form.html:51
+#: templates/admin/invent/stockout/change_form.html:51
+#: templates/admin/selfhelp/workorder/change_form.html:51
+#: templates/admin/workflow/node/change_form.html:51
+msgid "your apply has been denied,you can restart a new apply"
+msgstr ""
+
+#: templates/admin/change_form.html:53
+#: templates/admin/invent/inventory/change_form.html:53
+#: templates/admin/invent/stockin/change_form.html:53
+#: templates/admin/invent/stockout/change_form.html:53
+#: templates/admin/selfhelp/workorder/change_form.html:53
+#: templates/admin/workflow/node/change_form.html:53
+msgid "agree"
+msgstr ""
+
+#: templates/admin/change_form.html:54
+#: templates/admin/invent/inventory/change_form.html:54
+#: templates/admin/invent/stockin/change_form.html:54
+#: templates/admin/invent/stockout/change_form.html:54
+#: templates/admin/selfhelp/workorder/change_form.html:54
+#: templates/admin/workflow/node/change_form.html:54
+msgid "deny"
+msgstr ""
+
+#: templates/admin/change_form.html:55
+#: templates/admin/invent/inventory/change_form.html:55
+#: templates/admin/invent/stockin/change_form.html:55
+#: templates/admin/invent/stockout/change_form.html:55
+#: templates/admin/selfhelp/workorder/change_form.html:55
+#: templates/admin/workflow/node/change_form.html:55
+msgid "terminate"
+msgstr ""
+
+#: templates/admin/change_form.html:56
+#: templates/admin/invent/inventory/change_form.html:56
+#: templates/admin/invent/stockin/change_form.html:56
+#: templates/admin/invent/stockout/change_form.html:56
+#: templates/admin/selfhelp/workorder/change_form.html:56
+#: templates/admin/submit_line.html:5
+#: templates/admin/workflow/node/change_form.html:56
+#: templates/default/workflow/workflow_start_confirmation.html:12
+msgid "submit"
+msgstr ""
+
+#: templates/admin/change_form.html:63
+#: templates/admin/invent/inventory/change_form.html:63
+#: templates/admin/invent/stockin/change_form.html:63
+#: templates/admin/invent/stockout/change_form.html:63
+#: templates/admin/selfhelp/workorder/change_form.html:63
+#: templates/admin/workflow/node/change_form.html:63
+msgid "Please correct the error below."
+msgstr ""
+
+#: templates/admin/change_form.html:63
+#: templates/admin/invent/inventory/change_form.html:63
+#: templates/admin/invent/stockin/change_form.html:63
+#: templates/admin/invent/stockout/change_form.html:63
+#: templates/admin/selfhelp/workorder/change_form.html:63
+#: templates/admin/workflow/node/change_form.html:63
+msgid "Please correct the errors below."
+msgstr ""
+
+#: templates/admin/index.html:31
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: templates/admin/index.html:48
+msgid "Change"
+msgstr ""
+
+#: templates/admin/index.html:60
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: templates/admin/index.html:83
+msgid "Recent Actions"
+msgstr ""
+
+#: templates/admin/index.html:84
+msgid "My Actions"
+msgstr ""
+
+#: templates/admin/index.html:88
+msgid "None available"
+msgstr ""
+
+#: templates/admin/index.html:102
+msgid "Unknown content"
+msgstr ""
+
+#: templates/admin/invent/inventory/change_form.html:136
+msgid "InOut History"
+msgstr ""
+
+#: templates/admin/invent/inventory/change_form.html:142
+msgid "plus or minus prop"
+msgstr ""
+
+#: templates/admin/invent/stockin/in_confirmation.html:12
+#: templates/admin/invent/stockout/out_confirmation.html:12
+msgid "action"
+msgstr ""
+
+#: templates/admin/invent/stockin/in_confirmation.html:17
+msgid "Are your sure to execute the operations?"
+msgstr ""
+
+#: templates/admin/invent/stockin/in_confirmation.html:23
+#: templates/admin/invent/stockout/out_confirmation.html:23
+#: templates/default/workflow/workflow_approve_confirmation.html:58
+#: templates/default/workflow/workflow_start_confirmation.html:38
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: templates/admin/invent/stockin/in_confirmation.html:24
+#: templates/admin/invent/stockout/out_confirmation.html:24
+#: templates/default/workflow/workflow_approve_confirmation.html:59
+#: templates/default/workflow/workflow_approve_confirmation.html:64
+#: templates/default/workflow/workflow_start_confirmation.html:39
+msgid "No, take me back"
+msgstr ""
+
+#: templates/admin/invent/stockout/out_confirmation.html:17
+msgid "Are your sure to execute the check out operations?"
+msgstr ""
+
+#: templates/admin/object_history.html:24
+#: templates/admin/object_history.html:49
+msgid "Date/time"
+msgstr ""
+
+#: templates/admin/object_history.html:25
+#: templates/admin/object_history.html:50
+msgid "User"
+msgstr ""
+
+#: templates/admin/object_history.html:26
+#: templates/admin/object_history.html:52
+msgid "Action"
+msgstr ""
+
+#: templates/admin/object_history.html:40
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+
+#: templates/admin/object_history.html:44
+msgid "Workflow History"
+msgstr ""
+
+#: templates/admin/object_history.html:51
+msgid "node"
+msgstr ""
+
+#: templates/admin/object_history.html:53
+#: templates/default/workflow/workflow_approve_confirmation.html:51
+msgid "Workflow Memo"
+msgstr ""
+
+#: templates/admin/object_history.html:72
+msgid "already read"
+msgstr ""
+
+#: templates/admin/object_history.html:72
+msgid "unread"
+msgstr ""
+
+#: templates/admin/submit_line.html:4
+msgid "Save"
+msgstr ""
+
+#: templates/admin/submit_line.html:12
+msgid "Delete"
+msgstr ""
+
+#: templates/admin/submit_line.html:15
+msgid "Save as new"
+msgstr ""
+
+#: templates/admin/submit_line.html:16
+msgid "Save and add another"
+msgstr ""
+
+#: templates/admin/submit_line.html:17
+msgid "Save and continue editing"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:18
+msgid "Are you sure to terminate the request?"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:20
+msgid "Are you sure to deny the request?"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:22
+#: templates/default/workflow/workflow_start_confirmation.html:18
+#, python-format
+msgid ""
+"Are you sure you want to submit the %(object_name)s \"%(escaped_object)s\"? "
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:28
+msgid "current node is stop node,click the submit button to complete it"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:32
+msgid "back to start node"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:34
+#: templates/default/workflow/workflow_start_confirmation.html:23
+#: workflow/models.py:74
+msgid "next node"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:37
+msgid "attention"
+msgstr ""
+
+#: templates/default/workflow/workflow_approve_confirmation.html:46
+#: templates/default/workflow/workflow_start_confirmation.html:31
+msgid "No user was configured to handle this node"
+msgstr ""
+
+#: templates/default/workflow/workflow_start_confirmation.html:43
+msgid "you needs to config a workflow model for this content type"
+msgstr ""
+
+#: templates/default/workflow/workflow_start_confirmation.html:44
+msgid "OK"
+msgstr ""
+
+#: workflow/apps.py:9
+msgid "workflow"
+msgstr ""
+
+#: workflow/models.py:18
+msgid "workflow code"
+msgstr ""
+
+#: workflow/models.py:19
+msgid "workflow name"
+msgstr ""
+
+#: workflow/models.py:22 workflow/models.py:186
+msgid "app name"
+msgstr ""
+
+#: workflow/models.py:23 workflow/models.py:187
+msgid "model name"
+msgstr ""
+
+#: workflow/models.py:32 workflow/models.py:33 workflow/models.py:53
+#: workflow/models.py:111
+msgid "workflow model"
+msgstr ""
+
+#: workflow/models.py:47 workflow/models.py:72
+msgid "designated user"
+msgstr ""
+
+#: workflow/models.py:48 workflow/models.py:70
+msgid "designated position"
+msgstr ""
+
+#: workflow/models.py:49 workflow/models.py:71
+msgid "designated role"
+msgstr ""
+
+#: workflow/models.py:50 workflow/models.py:147 workflow/models.py:237
+msgid "submitter"
+msgstr ""
+
+#: workflow/models.py:54
+msgid "node code"
+msgstr ""
+
+#: workflow/models.py:55
+msgid "node name"
+msgstr ""
+
+#: workflow/models.py:56
+msgid "tooltip words"
+msgstr ""
+
+#: workflow/models.py:58
+msgid "start node"
+msgstr ""
+
+#: workflow/models.py:59
+msgid "stop node"
+msgstr ""
+
+#: workflow/models.py:60
+msgid "can terminate"
+msgstr ""
+
+#: workflow/models.py:61
+msgid "can deny"
+msgstr ""
+
+#: workflow/models.py:62
+msgid "can edit"
+msgstr ""
+
+#: workflow/models.py:64
+msgid "email notice"
+msgstr ""
+
+#: workflow/models.py:66
+msgid "approve node"
+msgstr ""
+
+#: workflow/models.py:67 workflow/models.py:188
+msgid "handler"
+msgstr ""
+
+#: workflow/models.py:69
+msgid "handler type"
+msgstr ""
+
+#: workflow/models.py:73
+msgid "designated department"
+msgstr ""
+
+#: workflow/models.py:76
+msgid "next user handler"
+msgstr ""
+
+#: workflow/models.py:77
+msgid "next node handler"
+msgstr ""
+
+#: workflow/models.py:78
+msgid "status field"
+msgstr ""
+
+#: workflow/models.py:79
+msgid "status value"
+msgstr ""
+
+#: workflow/models.py:80
+msgid "execute action"
+msgstr ""
+
+#: workflow/models.py:93 workflow/models.py:94 workflow/models.py:146
+msgid "workflow node"
+msgstr ""
+
+#: workflow/models.py:104 workflow/models.py:141
+msgid "DENY"
+msgstr ""
+
+#: workflow/models.py:105
+msgid "TERMINATED"
+msgstr ""
+
+#: workflow/models.py:107
+msgid "COMPLETED"
+msgstr ""
+
+#: workflow/models.py:113
+msgid "start user"
+msgstr ""
+
+#: workflow/models.py:115
+msgid "approved time"
+msgstr ""
+
+#: workflow/models.py:117 workflow/models.py:185 workflow/models.py:231
+msgid "current node"
+msgstr ""
+
+#: workflow/models.py:130 workflow/models.py:131 workflow/models.py:145
+#: workflow/models.py:184
+msgid "workflow instance"
+msgstr ""
+
+#: workflow/models.py:139
+msgid "SUBMIT"
+msgstr ""
+
+#: workflow/models.py:140
+msgid "AGREE"
+msgstr ""
+
+#: workflow/models.py:142
+msgid "TERMINATE"
+msgstr ""
+
+#: workflow/models.py:148
+msgid "process time"
+msgstr ""
+
+#: workflow/models.py:149
+msgid "process type"
+msgstr ""
+
+#: workflow/models.py:173 workflow/models.py:174
+msgid "workflow history"
+msgstr ""
+
+#: workflow/models.py:189
+msgid "arrived time"
+msgstr ""
+
+#: workflow/models.py:190
+msgid "is read"
+msgstr ""
+
+#: workflow/models.py:191
+msgid "read time"
+msgstr ""
+
+#: workflow/models.py:192
+msgid "is done"
+msgstr ""
+
+#: workflow/views.py:113 workflow/views.py:185
+msgid "No workflow model was found"
+msgstr ""
+
+#: workflow/views.py:117
+msgid "the object is already in workflow"
+msgstr ""
+
+#: workflow/views.py:138
+msgid "workflow started successfully"
+msgstr ""
+
+#: workflow/views.py:167
+msgid "unkown workflow operation"
+msgstr ""
+
+#: workflow/views.py:191
+msgid "please start the workflow first"
+msgstr ""
+
+#: workflow/views.py:260
+msgid "workflow approved successfully"
+msgstr ""
+
+#: workflow/views.py:309
+msgid "workflow restarted success"
+msgstr ""
+
+#: workflow/views.py:311
+msgid "you do not have the permission to restart,only the starter can restart"
+msgstr ""
