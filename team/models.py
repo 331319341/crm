@@ -9,12 +9,8 @@ from common import const
 class Team(generic.BO):
     name = models.CharField(verbose_name=_("team name"), max_length=32, unique=True)
     create_time = models.DateField(verbose_name=_("create time"))
-<<<<<<< HEAD
     #team_leader = models.IntegerField(verbose_name=_("leader name"), null=True, blank=True, choices=const.get_employee())
     team_leader = models.IntegerField(verbose_name=_("leader name"), null=True, blank=True)
-=======
-    team_leader = models.IntegerField(verbose_name=_("team name"), null=True, blank=True, choices=const.get_employee())
->>>>>>> bd684caf87842bf8907f440389fc184adf5a657b
     description = models.CharField(verbose_name=_("team desc"), max_length=256, null=True)
     
     class Meta:
