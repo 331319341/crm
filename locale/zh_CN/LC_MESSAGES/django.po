@@ -1556,23 +1556,42 @@ msgstr "住址"
 msgid "beizhu"
 msgstr "备注"
 
+#: .\team\models.py
+
 msgid "sale team"
 msgstr "销售团队"
+
+msgid "sale teams"
+msgstr "销售团队"
+
+msgid "team name"
+msgstr "团队名字"
+
+msgid "create time"
+msgstr "创建时间"
+
+msgid "leader name"
+msgstr "团队经理"
+
+msgid "team desc"
+msgstr "团队简介"
+
 
 msgid "sale employee"
 msgstr "销售员"
 
-msgid "Sale teams"
-msgstr "销售团队"
+msgid "sale employees"
+msgstr "销售员"
 
-msgid "Enter date"
-msgstr "输入日期"
+msgid "name"
+msgstr "姓名"
 
-
-
-msgid "Project team"
-msgstr "项目组"
-
-msgid "Passwd"
+msgid "passwd"
 msgstr "密码"
+
+msgid "project team"
+msgstr "所属团队"
+
+msgid "enter date"
+msgstr "入队时间"
 
