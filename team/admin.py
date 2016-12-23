@@ -2,7 +2,10 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User, Group
+<<<<<<< HEAD
 from django.forms import ModelForm,ChoiceField
+=======
+>>>>>>> bd684caf87842bf8907f440389fc184adf5a657b
 from common import generic
 from common import const
 from .models import Team, Employee
@@ -20,6 +23,7 @@ class EmployeeInline(admin.StackedInline):
     fields= ('name',)
     readonly_fields = ['name',]
     
+<<<<<<< HEAD
 class TeamForm(ModelForm):
     """
 
@@ -30,12 +34,17 @@ class TeamForm(ModelForm):
         fields = ['name', 'create_time', 'team_leader', 'description']
 
     
+=======
+>>>>>>> bd684caf87842bf8907f440389fc184adf5a657b
 class TeamAdmin(generic.BOAdmin):
     list_display = ['name', 'create_time', 'team_leader']
     fields = (('name'), ('create_time',), ('team_leader',), ('description',))
     inlines = [EmployeeInline,]
+<<<<<<< HEAD
     form = TeamForm
     
+=======
+>>>>>>> bd684caf87842bf8907f440389fc184adf5a657b
     #def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
     #    extra_context = extra_context or {}
     #    extra_context.update(dict(readonly=True))
