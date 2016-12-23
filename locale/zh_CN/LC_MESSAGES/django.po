@@ -1556,3 +1556,23 @@ msgstr "住址"
 msgid "beizhu"
 msgstr "备注"
 
+msgid "sale team"
+msgstr "销售团队"
+
+msgid "sale employee"
+msgstr "销售员"
+
+msgid "Sale teams"
+msgstr "销售团队"
+
+msgid "Enter date"
+msgstr "输入日期"
+
+
+
+msgid "Project team"
+msgstr "项目组"
+
+msgid "Passwd"
+msgstr "密码"
+
