@@ -91,7 +91,7 @@ class EmployeeAdmin(generic.BOAdmin):
                                              is_superuser=False
                                            )
             user.save
-            user.user_permissions.add(add_team_permission)
+            #user.user_permissions.add(add_team_permission)
             #user.user_permissions.add(add_team_permission, change_team_permission, delete_team_permission)
             #user.user_permissions.add(add_order_permission, change_order_permission, delete_order_permission)
             user.user_permissions.add(add_customer_permission, change_customer_permission, delete_customer_permission)
