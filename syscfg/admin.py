@@ -47,7 +47,7 @@ class RoleAdmin(generic.BOAdmin):
     filter_horizontal = ['users','menus']
 
 
-admin.site.register(Site, SiteAdmin)
-admin.site.register(Module,ModuleAdmin)
-admin.site.register(Menu,MenuAdmin)
-admin.site.register(Role,RoleAdmin)
+#admin.site.register(Site, SiteAdmin)
+#admin.site.register(Module,ModuleAdmin)
+#admin.site.register(Menu,MenuAdmin)
+#admin.site.register(Role,RoleAdmin)

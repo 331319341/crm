@@ -99,6 +99,6 @@ class PaymentCollectionAdmin(generic.BOAdmin):
             kwargs['queryset'] = BankAccount.objects.exclude(org__exact=None)
         return super(PaymentCollectionAdmin,self).formfield_for_foreignkey(db_field,request,**kwargs)
 
-admin.site.register(SaleOrder,SaleOrderAdmin)
-admin.site.register(PaymentCollection,PaymentCollectionAdmin)
-admin.site.register(OfferSheet,OfferSheetAdmin)
+#admin.site.register(SaleOrder,SaleOrderAdmin)
+#admin.site.register(PaymentCollection,PaymentCollectionAdmin)
+#admin.site.register(OfferSheet,OfferSheetAdmin)
