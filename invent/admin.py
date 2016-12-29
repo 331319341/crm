@@ -240,9 +240,9 @@ class WareAdjustAdmin(generic.BOAdmin):
         return super(WareAdjustAdmin,self).changeform_view(request,object_id,form_url,extra_context)
 
 
-#admin.site.register(StockIn,StockInAdmin)
-#admin.site.register(StockOut,StockOutAdmin)
-#admin.site.register(InitialInventory,InitialInventoryAdmin)
-#admin.site.register(Inventory,InventoryAdmin)
-#admin.site.register(WareReturn,WareReturnAdmin)
-#admin.site.register(WareAdjust,WareAdjustAdmin)
+admin.site.register(StockIn,StockInAdmin)
+admin.site.register(StockOut,StockOutAdmin)
+admin.site.register(InitialInventory,InitialInventoryAdmin)
+admin.site.register(Inventory,InventoryAdmin)
+admin.site.register(WareReturn,WareReturnAdmin)
+admin.site.register(WareAdjust,WareAdjustAdmin)

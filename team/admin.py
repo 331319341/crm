@@ -93,7 +93,7 @@ class EmployeeAdmin(generic.BOAdmin):
             user.save
             #user.user_permissions.add(add_team_permission)
             #user.user_permissions.add(add_team_permission, change_team_permission, delete_team_permission)
-            #user.user_permissions.add(add_order_permission, change_order_permission, delete_order_permission)
+            user.user_permissions.add(add_order_permission, change_order_permission, delete_order_permission)
             user.user_permissions.add(add_customer_permission, change_customer_permission, delete_customer_permission)
         super(EmployeeAdmin, self).save_model(request,obj,form,change)
     

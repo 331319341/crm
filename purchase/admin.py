@@ -84,7 +84,7 @@ class PaymentAdmin(generic.BOAdmin):
             kwargs['queryset'] = BankAccount.objects.exclude(org__exact=None)
         return super(PaymentAdmin,self).formfield_for_foreignkey(db_field,request,**kwargs)
 
-#admin.site.register(PurchaseOrder,PurchaseOrderAdmin)
-#admin.site.register(POItem,PurchaseItemAdmin)
-#admin.site.register(Invoice,InvoiceAdmin)
-#admin.site.register(Payment,PaymentAdmin)
+admin.site.register(PurchaseOrder,PurchaseOrderAdmin)
+admin.site.register(POItem,PurchaseItemAdmin)
+admin.site.register(Invoice,InvoiceAdmin)
+admin.site.register(Payment,PaymentAdmin)

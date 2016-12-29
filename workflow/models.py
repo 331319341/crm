@@ -18,7 +18,7 @@ class Modal(models.Model):
     code = models.CharField(_("workflow code"),max_length=const.DB_CHAR_CODE_6,blank=True,null=True)
     name = models.CharField(_("workflow name"),max_length=const.DB_CHAR_NAME_40)
     description = models.TextField(_("description"),blank=True,null=True)
-    content_type = models.ForeignKey(ContentType,verbose_name=_("content type"),limit_choices_to={"app_label__in":['basedata','organ']})
+    content_type = models.ForeignKey(ContentType,verbose_name=_("content type"),limit_choices_to={"app_label__in":['basedata','organ','customer']})
     app_name = models.CharField(_("app name"),max_length=const.DB_CHAR_NAME_60,blank=True,null=True)
     model_name = models.CharField(_("model name"),max_length=const.DB_CHAR_NAME_60,blank=True,null=True)
     # added by zhugl 2015-05-10

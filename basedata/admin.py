@@ -323,7 +323,7 @@ class DocumentAdmin(generic.BOAdmin):
 
     publish.short_description = _('publish selected %(verbose_name_plural)s')
 
-# admin.site.register(Address,AddressAdmin)
+admin.site.register(Address,AddressAdmin)
 admin.site.register(ValueList,ValueListAdmin) #值列表
 admin.site.register(Partner,PartnerAdmin)    #合作伙伴
 admin.site.register(Project,ProjectAdmin)    #项目
