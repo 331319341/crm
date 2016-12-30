@@ -170,7 +170,7 @@ class BOAdmin(admin.ModelAdmin):
             )
             ctx.update(buttons)
         extra_context.update(ctx)
-        # print extra_context
+        print extra_context
         return super(BOAdmin,self).changeform_view(request,object_id,form_url,extra_context)
 
     def history_view(self, request, object_id, extra_context=None):

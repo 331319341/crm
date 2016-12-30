@@ -47,6 +47,8 @@ class OrderAdmin(generic.BOAdmin):
               ('commission_deadline',),
               ('manager',))
     
+    extra_buttons = [{'href':'pay','title':_('pay')}]
+    
 admin.site.register(Customer, CustomerAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Contract, ContractAdmin)
