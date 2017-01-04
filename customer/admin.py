@@ -69,6 +69,7 @@ class OrderAdmin(generic.BOAdmin):
               ('commission_deadline',),
               ('manager',))
     
+    readonly_fields = ['commission_sale_leader_sum', 'commission_team_leader_sum']
     #extra_buttons = [{'href':'pay','title':_('pay')}]
     
 admin.site.register(Customer, CustomerAdmin)

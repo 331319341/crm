@@ -2,12 +2,58 @@
 <html>
 <head>
 	<meta charset="utf-8"> 
-	<title>Bootstrap 实例 - 模态框（Modal）插件</title>
+	<title>free-erp</title>
 	<link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-hello world
+	<div class="container_test">
+		<table class="table table-bordered table-condensed">
+			<caption>结算结果</caption>
+			<thead>
+				<tr>
+					<th>项目名称</th>
+					<th>销售经理</th>
+					<th>销售专员</th>
+					<th>客户名字</th>
+					<th>认购时间</th>
+					<th>销售金额</th>
+					<th>认购期限</th>
+					<th>年利率</th>
+					<th>销售经理(提成)</th>
+					<th>销售经理比例(提成)</th>
+					<th>销售经理金额(提成)</th>
+					<th>团队经理(提成)</th>
+					<th>团队经理比例(提成)</th>
+					<th>团队经理金额(提成)</th>
+					<th>应付日期(提成)</th>
+					<th>负责人</th>
+				</tr>
+			</thead>
+			<tbody>
+					{% for item in list_item %}
+						<tr>
+							<td>{{ item.project_name }}</td>
+                            <td>{{ item.sale_leader }}</td>
+							<td>{{ item.seller }}</td>
+							<td>{{ item.customer_name }}</td>
+							<td>{{ item.start_time }}</td>
+							<td>{{ item.buy_sum }}</td>
+							<td>{{ item.buy_deadline }}</td>
+							<td>{{ item.year_rate }}</td>
+							<td>{{ item.commission_sale_leader }}</td>
+							<td>{{ item.commission_sale_leader_rate }}</td>
+							<td>{{ item.commission_sale_leader_sum }}</td>
+							<td>{{ item.commission_team_leader }}</td>
+							<td>{{ item.commission_team_leader_rate }}</td>
+							<td>{{ item.commission_team_leader_sum }}</td>
+							<td>{{ item.commission_deadline }}</td>
+							<td>{{ item.manager }}</td>
+						</tr>
+					{% endfor %}
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>

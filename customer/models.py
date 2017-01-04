@@ -46,8 +46,8 @@ class Order(models.Model):
     commission_team_leader = models.CharField(verbose_name=_("commission team leader"), max_length=32)
     commission_sale_leader_rate = models.FloatField(verbose_name=_("commission sale leader rate"))
     commission_team_leader_rate = models.FloatField(verbose_name=_("commission team leader rate"))
-    commission_sale_leader_sum = models.FloatField(verbose_name=_("commission sale leader sum"))
-    commission_team_leader_sum = models.FloatField(verbose_name=_("commission team leader sum"))
+    commission_sale_leader_sum = models.FloatField(verbose_name=_("commission sale leader sum"), null=True)
+    commission_team_leader_sum = models.FloatField(verbose_name=_("commission team leader sum"), null=True)
     commission_deadline = models.IntegerField(verbose_name=_("commission deadline"))
     manager = models.CharField(verbose_name=_("manager"), max_length=32)
     
