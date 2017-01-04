@@ -10,6 +10,7 @@ import customer.urls
 
 urlpatterns = [
     # Examples:
+    url(r'^admin/customer/', include(customer.urls)),
     url(r'^$', 'mis.views.home'),
     # url(r'^blog/', include('blog.urls')),
     url(r"^admin/(?P<app>\w+)/(?P<model>\w+)/(?P<object_id>\d+)/start",'workflow.views.start'),
@@ -19,7 +20,8 @@ urlpatterns = [
     url(r'^admin/invent/', include(invent.urls)),
     url(r'^admin/basedata/', include(basedata.urls)),
     url(r'^admin/selfhelp/', include(selfhelp.urls)),
-    url(r'^admin/customer/', include(customer.urls)),
+    #url(r'^admin/customer/', include(customer.urls)),
 ]
+print urlpatterns
 urlpatterns += static.static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns += static.static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

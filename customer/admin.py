@@ -6,7 +6,10 @@ from common import const
 from .models import Project, Customer, Order, Contract
 from team.models import Employee, Team
 from common import generic
-
+from django.conf.urls import include, url
+from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+from django.shortcuts import render_to_response
 # Register your models here.
 
 class CustomerAdmin(generic.BOAdmin):
@@ -39,6 +42,25 @@ class ContractAdmin(generic.BOAdmin):
     
     
 class OrderAdmin(generic.BOAdmin):
+    actions = ["list_order"]
+    
+    def list_order(self, request, queryset):
+        response = HttpResponse()
+        return response
+    
+    '''
+    def get_urls(self):
+        urls = super(OrderAdmin, self).get_urls()
+        my_url = [url(r"^test/$", self.admin_site.admin_view(self.test)),]
+        return my_url+urls
+    
+    def test(self, request):
+        #qs = super(OrderAdmin, self).changelist_view(request)
+        qs = super(OrderAdmin, self).get_queryset(request)
+        print qs
+        return render_to_response("admin/customer/test.html")
+    '''
+    
     list_display = ['project_name','sale_leader', 'team_leader', 'seller', 'customer_name', 'start_time', 'manager']
     fields = (('project_name',), ('sale_leader',), ('team_leader',), ('seller',), ('customer_name',),
               ('start_time',), ('buy_sum',), ('buy_deadline',), ('year_rate',),
@@ -47,7 +69,7 @@ class OrderAdmin(generic.BOAdmin):
               ('commission_deadline',),
               ('manager',))
     
-    extra_buttons = [{'href':'pay','title':_('pay')}]
+    #extra_buttons = [{'href':'pay','title':_('pay')}]
     
 admin.site.register(Customer, CustomerAdmin)
 admin.site.register(Project, ProjectAdmin)

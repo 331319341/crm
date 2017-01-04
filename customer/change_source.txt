@@ -1,0 +1,17 @@
+source_path:/usr/lib/python2.7/site-packages/Django-1.8.17-py2.7.egg/django/contrib/admin/templates/admin
+
+source_file:
+change_list.html
+
+how to change:
+add:
+
+$(".button").click(function(){
+             var select = $("select").val();
+             if (select == "list_order"){
+                 window.open("/admin/customer/order/list_order/");
+             }
+         });
+ to line:28
+
+notice:add a button click event to dealwith data
