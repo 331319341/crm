@@ -1595,3 +1595,5 @@ msgstr "所属团队"
 msgid "enter date"
 msgstr "入队时间"
 
+msgid "list_order"
+msgstr "结算"

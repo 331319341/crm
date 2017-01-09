@@ -48,6 +48,8 @@ class OrderAdmin(generic.BOAdmin):
         response = HttpResponse()
         return response
     
+    list_order.short_description = _("list_order")
+    
     '''
     def get_urls(self):
         urls = super(OrderAdmin, self).get_urls()
