@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 from django.db import models
 from django.contrib.auth.models import User
 from team.models import Employee
@@ -8,7 +9,9 @@ from common import generic
 
 # Create your models here.
 class Project(generic.BO):
+    project_cata = (('1', u'基金项目'),('2', u'借款项目'))
     title = models.CharField(verbose_name=_("project name"), max_length=32)
+    cata = models.CharField(verbose_name=_("project cata"), max_length=32, choices=project_cata, default='1')
     start_time = models.DateField(verbose_name=_("start time"), default=datetime.datetime.now)
     description = models.CharField(verbose_name=_("project desc"), max_length=256, null=True)
     
@@ -22,9 +25,9 @@ class Customer(generic.BO):
     birth = models.DateField(verbose_name=_("customer birth"))
     gender = models.CharField(verbose_name=_("customer gender"), max_length=8, choices=const.gender_set, default='1')
     addr = models.CharField(verbose_name=_("customer addr"), max_length=32)
-    phone = models.IntegerField(verbose_name=_("phone"))
+    phone = models.CharField(verbose_name=_("phone"), max_length=16)
     Email = models.CharField(verbose_name=_("Email"), max_length=32)
-    QQ = models.IntegerField(verbose_name=_("QQ"))
+    QQ = models.CharField(verbose_name=_("QQ"), max_length=16)
     seller = models.ForeignKey(Employee, verbose_name=_("seller"))
     beizhu = models.CharField(verbose_name=_("beizhu"), max_length=256)
     
@@ -58,7 +61,7 @@ class Order(models.Model):
 class Contract(models.Model):
     number = models.CharField(verbose_name=_("number"), max_length=32)
     into_way = models.CharField(verbose_name=_("into way"), max_length=32)
-    project_name = models.CharField(verbose_name=_("project name"), max_length=32)
+    project_name = models.ForeignKey(Project, verbose_name=_("project name"))
     seller = models.ForeignKey(Employee, verbose_name=_("seller"))
     customer_name = models.CharField(verbose_name=_("customer name"), max_length=32)
     customer_ID = models.CharField(verbose_name=_("customer ID"), max_length=32)
@@ -69,6 +72,7 @@ class Contract(models.Model):
     buy_category = models.CharField(verbose_name=_("buy category"), max_length=32)
     buy_deadline = models.IntegerField(verbose_name=_("buy deadline"))
     year_rate = models.FloatField(verbose_name=_("year rate"))
+    payment_date = models.DateField(verbose_name=_("payment date"), default=datetime.datetime.strftime(datetime.date.today(), "%Y-%m-%d"))
 
     class Meta:
         verbose_name = _("sale contract")
