@@ -14,7 +14,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.utils.http import urlquote
 from collections import OrderedDict
-from .util import getdate
+from .util import getdate, getJIKUANDate, getJIEKUANSum, mathsum
 
 # Register your models here.
 
@@ -75,37 +75,47 @@ class ContractAdmin(generic.BOAdmin):
             one_contract['customer_ID'] = item.customer_ID
             one_contract['bank_name'] = item.bank_name
             one_contract['bank_account'] = item.bank_account
-            one_contract['buy_date'] = item.buy_date
+            one_contract['buy_date'] = item.buy_date.strftime('%Y-%m-%d')
             one_contract['buy_sum'] = item.buy_sum
             one_contract['buy_category'] = item.buy_category
             one_contract['buy_deadline'] = item.buy_deadline
             one_contract['year_rate'] = item.year_rate
             
-            will_pay_date = ''
-            will_pay_sum = 0
             row_list = []
             project_cata = item.project_name.cata
+            year_rate = item.year_rate / 100.0
             if project_cata == '1': #基金项目
                 month_count = item.buy_deadline
                 t = month_count / 3
                 for i in xrange(t):
-                    YFDate = getdate(item.buy_date, (i+1)*3)
+                    buy_date = item.buy_date.strftime('%Y-%m-%d')
+                    YFDate = getdate(buy_date, (i+1)*3)
+                    YFSum = mathsum(item.buy_sum * year_rate / 4)
+                    if i == t-1:
+                        YFSum = YFSum + item.buy_sum
                     the_contract = copy.deepcopy(one_contract)
                     the_contract['YFDate'] = YFDate
-                    the_contract['YFSum'] = item.buy_sum * item.year_rate / 4
+                    the_contract['YFSum'] = YFSum
                     row_list.append(the_contract)
             elif project_cata == '2': #借款项目
                 deadline = item.buy_deadline
                 if deadline <= 3:
                     the_contract = copy.deepcopy(one_contract)
-                    the_contract['YFDate'] = item.buy_date
-                    the_contract['YFSum'] = item.buy_sum * item.year_rate * item.buy_deadline / 12
+                    buy_date = item.buy_date.strftime('%Y-%m-%d')
+                    the_contract['YFDate'] = getdate(buy_date, deadline)
+                    the_contract['YFSum'] = mathsum(item.buy_sum * year_rate * item.buy_deadline / 12)
                     row_list.append(the_contract)
+                elif deadline >= 6:
+                    buy_date = item.buy_date.strftime('%Y-%m-%d')
+                    YFDate = getJIKUANDate(buy_date, item.buy_deadline)
+                    YFSum = getJIEKUANSum(YFDate, item.buy_sum, buy_date, year_rate, item.buy_deadline)
+                    for i in range(len(YFDate)):
+                        the_contract = copy.deepcopy(one_contract)
+                        the_contract['YFDate'] = YFDate[i]
+                        the_contract['YFSum'] = YFSum[i]
+                        row_list.append(the_contract)
                 else:
                     pass
-
-            row_list.append(one_contract)
-            row_list.append(one_contract)
             
             alignment = xlwt.Alignment()
             alignment.horz = xlwt.Alignment.HORZ_CENTER
