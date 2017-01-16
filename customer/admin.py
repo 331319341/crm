@@ -48,12 +48,12 @@ class ContractAdmin(generic.BOAdmin):
         sheet = workbook.add_sheet("核算结果")
     
         field_list = [
-                        u"销售项目", u"往来账户", u"入账途径", u"合同编号", u"销售网点",
+                        u"销售项目", u"往来账户", u"入账途径", u"合同编号", u"销售网点", u"销售团队",
                         u"销售人员", u"客户姓名", u"客户性质", u"身份证号", u"开户行",
                         u"账号", u"起息时间", u"购买金额", u"认购类别", u"认购期限",
                         u"年化业绩", u"年利率", u"剩余应付天数", u"应付日期", u"应付本息金额",
                         u"实付日期", u"实付金额", u"付款警示", u"应付余额", u"应付总额"]
-        field_dict = ['project_name', 'contact_account', 'into_way', 'number', 'sales_network',
+        field_dict = ['project_name', 'contact_account', 'into_way', 'number', 'sales_network', 'team',
                       'seller', 'customer_name', 'customer_xingzhi', 'customer_ID', 'bank_name',
                       'bank_account', 'buy_date', 'buy_sum', 'buy_category', 'buy_deadline',
                       'nianhu', 'year_rate', 'SYDays', 'YFDate', 'YFSum',
@@ -70,6 +70,8 @@ class ContractAdmin(generic.BOAdmin):
             one_contract['project_name'] = item.project_name.title
             one_contract['into_way'] = item.into_way
             one_contract['number'] = item.number
+            if item.seller.team:
+                one_contract['team'] = item.seller.team.name
             one_contract['seller'] = item.seller.name
             one_contract['customer_name'] = item.customer_name
             one_contract['customer_ID'] = item.customer_ID
