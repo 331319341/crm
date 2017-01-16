@@ -103,7 +103,7 @@ class ContractAdmin(generic.BOAdmin):
                     the_contract = copy.deepcopy(one_contract)
                     buy_date = item.buy_date.strftime('%Y-%m-%d')
                     the_contract['YFDate'] = getdate(buy_date, deadline)
-                    the_contract['YFSum'] = mathsum(item.buy_sum * year_rate * item.buy_deadline / 12)
+                    the_contract['YFSum'] = mathsum(item.buy_sum + (item.buy_sum * year_rate * item.buy_deadline / 12))
                     row_list.append(the_contract)
                 elif deadline >= 6:
                     buy_date = item.buy_date.strftime('%Y-%m-%d')

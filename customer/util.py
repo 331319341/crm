@@ -17,7 +17,7 @@ def getdate(this_date, after_months):
     t = month + after_months
     if t > 12:
         year = year + t/12
-        month = t%12
+        month = t%12 if t%12 else 12
     else:
         month = t
     if day > 1:
@@ -49,7 +49,7 @@ def _add_month(year, month, month_count):
     t = month + month_count
     if t > 12:
         year = year + t/12
-        month = t%12
+        month = t%12 if t%12 else 12
     else:
         month = t
     return year,month
